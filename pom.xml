@@ -20,7 +20,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<jedis.version>2.9.0</jedis.version>
-		<rjava.version>2.1.0</rjava.version>
+		<rjava.version>0.9-13</rjava.version>
 		<swagger.version>2.7.0</swagger.version>
 		<lombok.version>1.18.4</lombok.version>
 		<aliyun.oss.version>2.8.3</aliyun.oss.version>
@@ -101,20 +101,16 @@
 		</dependency>
 		<!-- rjava -->
 <!-- https://mvnrepository.com/artifact/com.github.lucarosellini.rJava/JRIEngine -->
-
 		<dependency>
-			<groupId>com.github.lucarosellini.rJava</groupId>
+			<groupId>com.github.jchaoy.rJava</groupId>
 			<artifactId>JRIEngine</artifactId>
-			<version>0.9-7</version>
+			<version>${rjava.version}</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.rosuda.REngine/REngine -->
 		<dependency>
-			<groupId>org.rosuda.REngine</groupId>
+			<groupId>com.github.jchaoy.rJava</groupId>
 			<artifactId>REngine</artifactId>
 			<version>${rjava.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.github.jchaoy.rJava</groupId>
 			<artifactId>JRI</artifactId>

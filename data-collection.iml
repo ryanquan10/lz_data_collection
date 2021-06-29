@@ -93,7 +93,8 @@
     <orderEntry type="library" name="Maven: com.github.lucarosellini.rJava:JRI:0.9-7" level="project" />
     <orderEntry type="library" name="Maven: com.github.lucarosellini.rJava:REngine:0.9-7" level="project" />
     <orderEntry type="library" name="Maven: org.rosuda.REngine:REngine:2.1.0" level="project" />
-    <orderEntry type="library" name="Maven: com.github.jchaoy.rJava:JRI:2.1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jchaoy.rJava:JRI:0.9-7" level="project" />
+    <orderEntry type="library" name="Maven: org.renjin.cran:rJava:0.9-9-b1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.7" level="project" />
     <orderEntry type="library" name="Maven: joda-time:joda-time:2.9.9" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger2:2.7.0" level="project" />
