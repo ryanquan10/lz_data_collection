@@ -1,0 +1,76 @@
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">
+
+$(function(){
+	judgeAuthority();
+});
+
+// 身份验证
+function judgeAuthority(){  
+    $.ajax({  
+        type: "get",  
+        url: "${request.contextPath}/sys/user/info",  
+        contentType: 'application/json;charset=utf-8',  
+        success: function (res) {  
+        	//console.log(res);
+        	if (res.code!=0) {
+        		$('#btnsDiv').hide();
+	        	$('#btnsLoginDiv').show();
+                //return vm.$message.error(res.data.msg);
+            }else{
+	        	$('#btnsDiv').show();
+	        	$('#btnsLoginDiv').hide();
+	        	$('#userLabel').html(res.data.realName);
+	             /*  vm.user.id = res.data.data.id;
+	              vm.user.name = res.data.data.username;
+	              vm.user.realName = res.data.data.realName;
+	              vm.user.superAdmin = res.data.data.superAdmin;  */
+            }
+        }  
+    })  
+}  
+
+// 注销退出
+function logout(){
+	$.ajax({  
+        type: "post",  
+        url: "${request.contextPath}/logout",  
+        success: function (res) {
+        	console.log(res);
+        	if (res.code!=0) {
+        		alert("注销失败！");
+            }else{
+            	//alert("注销成功！");
+	        	window.location.href = 'login.html';
+            }
+        }  
+    })  
+}
+
+</script>
+<DIV id="header" style="position: relative;">
+		<DIV id="logo" style="float: left; align: middle;">
+			<A href=""><IMG height="60" style="background:#F7FAFC"
+				alt="logo" src="./statics/images/logo.png"></A> <!-- bootstrap-3.3.7/static/images/my_logo.png -->
+		</DIV>
+		<FORM action="/" method="get">
+			<DIV align="right" class="input-group col-md-3 search_chart"
+				style="margin-top: 15px; margin-left: 100px; positon: relative;">
+				<INPUT name="keywords" class="form-control" id="keywords"
+					type="text" placeholder="请输入关键词" value=""><SPAN
+					class="input-group-btn"><BUTTON
+						class="btn btn-info btn-search" style="margin-left: 10px;"
+						type="submit">查找</BUTTON> </SPAN>
+			</DIV>
+		</FORM>
+		<div class="btns" id="btnsDiv" style="display: none;">欢迎: <label id="userLabel">18922485818@189.cn</label>   
+            <a href="#" onclick="logout();">注销</a>
+        </div>
+		<DIV class="btns_login" id="btnsLoginDiv" style="display: none;" >
+			<A class="fr registerbtn" style="color: white; margin-right: 20px;"
+				href="${request.contextPath}/register.html">注册</A> <A
+				class="fr loginbtn" style="color: white;"
+				href="${request.contextPath}/login.html">登录</A>
+		</DIV>
+	</DIV>
