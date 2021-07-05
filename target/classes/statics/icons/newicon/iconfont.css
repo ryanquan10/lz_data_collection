@@ -1,0 +1,36 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1550373051735'); /* IE9 */
+  src: url('iconfont.eot?t=1550373051735#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARAAAsAAAAACKAAAAPxAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqEWIQEATYCJAMQCwoABCAFhG0HSht4B8gekiRCEAEFAABCsI14+G+/dt/82XVEkyTRpEk0auLQzFOHkCmJRql00USj7c+3qY+Sijg1V9icwkcSJ0ycTFRPFTvraeZZMj+qnZuzwPB/3Kua6R+D81myXeYaGMoFMLw1QHO32xYVrNyCBLiqHcYuLuNhAnVD0mGbje394CLTVgXiTuRpcIkZ5ZLKUBXKOQczxAM4qqZ9Dg+Ae/f34xdmwgUkpQK0R+1dNLBQ/RH/QcCVRQWWFwoo/dnBHKPANJCJq1znCdxPTsPVpXyVBaCq2xN9jRR9EBZbWLwWZRW7SK3/eVEGTdmE+LlUwUe8SSPxUSTMUwlQfALlGVRbp58A/LOmARp7EmrLWIbq3fw8Q1TYJuzUgTPng7h5235rudU6gJ4e6Bu122yp3Ly1fNaacSoQFaIsbz1yY+F2ChqeVqaSZ/dXcjY7abcPoHW97KxSMXegirdbBm37+1mrMvDiAMn3eoT9gzaLbuGAMl0pZ0/uH7EEb3KDBhNdoNPffOhxOgBbraKxU8GeB85gjmdOs42D/Y3kYNOAO9nUb/LA3DE3oPekmn27KDRtANT9HuMoqnd5HLsqYaCtCx63dO3YeefyndnIRugaaJrZvUtisP58fOVHhxiSQv4P/QYHBsToxb9TO3f1c5Wo4euGrzt2lNfAaEV1TeUI1CySJEw1v8vPJwVql7BGMlXVTVTV1lZNGhN27aKW/6VWrKD+AsTV9R1SWzWOVNaOv2bXzrXiWlIkTaa3cefiHsLso4vSpQQp3UqYi676otL0vOqc/ttL1TepnprqXI+fHnXuP98s9KbwaXRuzdpSJTZ2tVMi31u/zzOqME3oFnyFLiEQ24OFTsiD/ozCXKqfLV1gBGhVnMDLEQk+givp8Qfc5y+4jYNX+sMq7/L/1YYK4OXw7xkYaFFBfdGrFEmidy6q2ZJliWbKWZSaQqU02+LKjaxUV8ebztLtfR/uPhDaQ5UVQUgqBqFQNYzO+GkoaZiDsqoVqJvSdLyhhwQX2RWYtAtA6DQJSbtnKHR6iM74d1DS7zuUdQYOdfvhf2HDaIhudRKiZcQSQxsIkTHoOcMiu3mVvYhfo6WlqMQlDiLJLEaInMzsZKYJ6ZHUxxbzWj5XljmCkww6ohE8Dmm1BsIoGdSIkTMFWTaWZmVxeZ+UyRh04GaDBKHJEBZhyAYEEcNAj7M7y9xSP98L4a2hRZNKmkrcgxCJmTg+IUem7BroJqW+VtO5TDdbi5dLJuPwMo7EQIfQCO2IVk8aEIz589QQhiyT0CJuVCoLtePqKjPHV+uucBfUaTfK4YDhmApzhPqxLNOMoEN62T1ozHFsWM8gLQAAAAA=') format('woff2'),
+  url('iconfont.woff?t=1550373051735') format('woff'),
+  url('iconfont.ttf?t=1550373051735') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1550373051735#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="jc-icon"], [class*=" jc-icon"]/*这里有空格*/
+{ font-family: "iconfont" !important;
+font-size: 16px;
+font-style: normal;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale; }
+
+.jc-icon-attachment:before {
+  content: "\e668";
+}
+
+.jc-icon-attachment1:before {
+  content: "\e624";
+}
+
+.jc-icon-Excel:before {
+  content: "\e637";
+}
+
