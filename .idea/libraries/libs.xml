@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/libs/JRI.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/libs/JRIEngine.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/libs/REngine.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/src/main/resources/libs" />
+      <root url="file://$PROJECT_DIR$/src/main/resources/libs" />
+      <root url="file://$PROJECT_DIR$/src/main/resources/libs" />
+      <root url="file://$PROJECT_DIR$/src/main/resources/libs" />
+      <root url="file://$PROJECT_DIR$/src/main/resources/libs" />
+      <root url="file://$PROJECT_DIR$/src/main/resources/libs" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>
