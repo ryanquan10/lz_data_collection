@@ -34,7 +34,7 @@
 		<qcloud.qcloudsms.version>1.0.5</qcloud.qcloudsms.version>
 		<fastjson.version>1.2.45</fastjson.version>
 		<activiti.version>5.22.0</activiti.version>
-		<mysql.version>5.1.38</mysql.version>
+		<mysql.version>8.0.25</mysql.version>
 		<druid.version>1.1.10</druid.version>
         <mybatisplus.version>3.0.6</mybatisplus.version>
         <hutool.version>4.1.8</hutool.version>
