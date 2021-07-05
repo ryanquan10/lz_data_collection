@@ -221,8 +221,10 @@
     	  	        	var imgPath = data.bizContent;
     	  	        	//alert("生成图片路径：" + imgPath);
     	  	        	//$("#outputImg").src=imgPath;
-    	  	        	$("#outputImg").attr("src","http://www.scisy.org/"+imgPath);
-    	  	        	$("#imgDownload").attr("href","http://www.scisy.org/"+imgPath);
+    	  	        	// $("#outputImg").attr("src","http://www.scisy.org/"+imgPath);
+    	  	        	// $("#imgDownload").attr("href","http://www.scisy.org/"+imgPath);
+						$("#outputImg").attr("src","http://192.168.233.133"+imgPath);
+						$("#imgDownload").attr("href","http://192.168.233.133"+imgPath);
     	  	        	$("#imgDownload").attr("download",imgPath);
     	  	        	$("#outputImgDiv").show();
     	  	        }else{
@@ -262,8 +264,11 @@
 	  	        	var imgPath = data.bizContent;
 	  	        	//alert("生成图片路径：" + imgPath);
 	  	        	//$("#outputImg").src=imgPath;
-	  	        	$("#outputImg").attr("src","http://www.scisy.org/"+imgPath);
-    	  	        $("#imgDownload").attr("href","http://www.scisy.org/"+imgPath);
+	  	        	// $("#outputImg").attr("src","http://www.scisy.org/"+imgPath);
+    	  	        // $("#imgDownload").attr("href","http://www.scisy.org/"+imgPath);
+					$("#outputImg").attr("src","http://192.168.233.133"+imgPath);
+					$("#imgDownload").attr("href","http://192.168.233.133"+imgPath);
+
     	  	      	$("#imgDownload").attr("download",imgPath);
 	  	        	$("#outputImgDiv").show();
 	  	        }else{

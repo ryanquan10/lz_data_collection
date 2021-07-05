@@ -6,6 +6,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.rosuda.JRI.REXP;
 import org.rosuda.JRI.Rengine;
@@ -80,9 +81,31 @@ public class DataAnalysisController {
 				        	List<String> a2 = new ArrayList<String>();
 				        	// 转二维数组
 							String arra[] = plotData.split("\r\n");
+
+
+
+							List l = new ArrayList();
+							if(arra.length==1){
+								String[] temp = arra[0].split("\\s");
+								for(int i=0;i< temp.length;i++){
+									if(i%2!=0){
+										l.add(temp[i-1]+"\t"+temp[i]);
+									}
+								}
+								arra= ArrayUtils.toStringArray(l.toArray());
+							}
+
 							String arrb[][] = new String[arra.length][];
+
 							for (int i = 0; i < arra.length; i++) {
 								arrb[i] = arra[i].split("\\t");
+								if(arrb[i].length==1){
+									arrb[i] = arra[i].split("\\s");
+								}
+								if(arrb[i].length==1){
+									arrb[i] = arra[i].split("\t");
+								}
+
 								if(arrb[i]==null||arrb[i].length==0){
 									break;
 								}else if(arrb[i].length>2){
