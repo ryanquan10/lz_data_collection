@@ -2,7 +2,7 @@ spring:
   datasource:
     druid:
       #MySQL
-      driver-class-name: com.mysql.cj.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
       #url: jdbc:mysql://localhost:3306/security_enterprise?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
       url: jdbc:mysql://8.129.59.18:3306/scisy_db?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
       #username: mpoams

@@ -79,20 +79,10 @@ public class DataAnalysisController {
 				        	List<String> a1 = new ArrayList<String>();
 				        	List<String> a2 = new ArrayList<String>();
 				        	// 转二维数组
-							String arra[] = plotData.split("\\s");
-
-							List l = new ArrayList();
-
-							for(int i=0;i<arra.length;i++){
-								if(i%2==1){
-									l.add(arra[i-1]+" "+arra[i]);
-								}
-							}
-
-
+							String arra[] = plotData.split("\r\n");
 							String arrb[][] = new String[arra.length][];
 							for (int i = 0; i < arra.length; i++) {
-								arrb[i] = arra[i].split("\\s");
+								arrb[i] = arra[i].split("\\t");
 								if(arrb[i]==null||arrb[i].length==0){
 									break;
 								}else if(arrb[i].length>2){

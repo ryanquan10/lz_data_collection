@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ff8e4b-09c3-48ca-8552-011440b4aad0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_lucarosellini_rJava_JRIEngine_0_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_lucarosellini_rJava_REngine_0_9_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jriengine_jriengine_0_8_4.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jchaoy_rJava_JRIEngine_0_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jchaoy_rJava_JRI_0_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jchaoy_rJava_REngine_0_9_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_lucarosellini_rJava_JRIEngine_0_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_lucarosellini_rJava_JRI_0_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_lucarosellini_rJava_REngine_0_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_rosuda_REngine_REngine_2_1_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data-collection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/data-collection.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/R程序/venn.R" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/R程序/venn_matrix.R" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/需求方案文档/登陆注册设计文档20200909_v1.0.doc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modules/plot/plotbasic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/modules/plot/plotbasic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modules/plot/plotbasic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/modules/plot/plotbasic.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +45,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../developer/apache-maven-3.8.1" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
@@ -118,19 +115,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CaptchaRecordDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="data-collection" />
       <extension name="coverage">
@@ -190,6 +174,7 @@
       <workItem from="1625466438810" duration="1891000" />
       <workItem from="1625468424068" duration="1614000" />
       <workItem from="1625470125579" duration="16783000" />
+      <workItem from="1625496681991" duration="208000" />
     </task>
     <servers />
   </component>
@@ -211,12 +196,7 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/DataCollectionApplication.java</url>
           <line>14</line>
           <option name="timeStamp" value="3" />
