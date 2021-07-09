@@ -1,169 +1,169 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<TITLE>数据库在线统计与画图工具</TITLE>
-<META http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<META name="keywords" content="饼图,在线绘图">
-<META name="description" content="免费在线绘制饼图">
-<META name="content-type" content="text/html; charset=UTF-8">
-<LINK href="${request.contextPath}/statics/bootstrap-3.3.7/static/css/index.css" rel="stylesheet">
-<LINK href="${request.contextPath}/statics/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-<LINK href="${request.contextPath}/statics/bootstrap-3.3.7/static/css/jquery.autocompleter.css" rel="stylesheet">
-<script src="${request.contextPath}/statics/bootstrap-3.3.7/static/js/jscolor.min.js"></script>
-<SCRIPT src="${request.contextPath}/statics/bootstrap-3.3.7/static/js/jquery-3.5.1.min.js"></SCRIPT>
-<SCRIPT src="${request.contextPath}/statics/bootstrap-3.3.7/static/js/jquery.autocompleter.js"></SCRIPT>
-<SCRIPT src="${request.contextPath}/statics/js/mycommon.js"></SCRIPT>
+	<TITLE>数据库在线统计与画图工具</TITLE>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<META name="keywords" content="饼图,在线绘图">
+	<META name="description" content="免费在线绘制饼图">
+	<META name="content-type" content="text/html; charset=UTF-8">
+	<LINK href="${request.contextPath}/statics/bootstrap-3.3.7/static/css/index.css" rel="stylesheet">
+	<LINK href="${request.contextPath}/statics/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<LINK href="${request.contextPath}/statics/bootstrap-3.3.7/static/css/jquery.autocompleter.css" rel="stylesheet">
+	<script src="${request.contextPath}/statics/bootstrap-3.3.7/static/js/jscolor.min.js"></script>
+	<SCRIPT src="${request.contextPath}/statics/bootstrap-3.3.7/static/js/jquery-3.5.1.min.js"></SCRIPT>
+	<SCRIPT src="${request.contextPath}/statics/bootstrap-3.3.7/static/js/jquery.autocompleter.js"></SCRIPT>
+	<SCRIPT src="${request.contextPath}/statics/js/mycommon.js"></SCRIPT>
 
-<link href="${request.contextPath}/statics/bootstrap-3.3.7/fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
-<script src="${request.contextPath}/statics/bootstrap-3.3.7/fileinput/js/fileinput.js" type="text/javascript"></script>
-<script src="${request.contextPath}/statics/bootstrap-3.3.7/fileinput/js/locales/zh.js" type="text/javascript"></script>
-<SCRIPT src="${request.contextPath}/statics/bootstrap-3.3.7/dist/js/bootstrap.js"></SCRIPT>
+	<link href="${request.contextPath}/statics/bootstrap-3.3.7/fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+	<script src="${request.contextPath}/statics/bootstrap-3.3.7/fileinput/js/fileinput.js" type="text/javascript"></script>
+	<script src="${request.contextPath}/statics/bootstrap-3.3.7/fileinput/js/locales/zh.js" type="text/javascript"></script>
+	<SCRIPT src="${request.contextPath}/statics/bootstrap-3.3.7/dist/js/bootstrap.js"></SCRIPT>
 
-<STYLE>
-.show_chart {
-	margin: 10px 0 0 0;
-}
+	<STYLE>
+		.show_chart {
+			margin: 10px 0 0 0;
+		}
 
-.show_chart tbody tr>td:nth-child(1) {
-	background: #f5f5f5;
-}
-</STYLE>
+		.show_chart tbody tr>td:nth-child(1) {
+			background: #f5f5f5;
+		}
+	</STYLE>
 
-<META name="GENERATOR" content="MSHTML 11.00.10570.1001">
+	<META name="GENERATOR" content="MSHTML 11.00.10570.1001">
 </HEAD>
 <BODY>
-	<STYLE>
-.loginbtn {
-	width: 80px;
-	height: 30px;
-	line-height: 30px;
-	margin-top: 20px;
-	background: #cccccc;
-	margin-left: 2px;
-	text-align: center;
-	float: right;
-	cursor: pointer;
-}
+<STYLE>
+	.loginbtn {
+		width: 80px;
+		height: 30px;
+		line-height: 30px;
+		margin-top: 20px;
+		background: #cccccc;
+		margin-left: 2px;
+		text-align: center;
+		float: right;
+		cursor: pointer;
+	}
 
-.registerbtn {
-	width: 80px;
-	height: 30px;
-	line-height: 30px;
-	margin-top: 20px;
-	background: #cccccc;
-	margin-left: 2px;
-	text-align: center;
-	float: right;
-	cursor: pointer;
-}
+	.registerbtn {
+		width: 80px;
+		height: 30px;
+		line-height: 30px;
+		margin-top: 20px;
+		background: #cccccc;
+		margin-left: 2px;
+		text-align: center;
+		float: right;
+		cursor: pointer;
+	}
 
-.loginbtn {
-	background: rgb(15, 136, 235, 0.8);
-}
+	.loginbtn {
+		background: rgb(15, 136, 235, 0.8);
+	}
 
-.loginbtn:hover {
-	background: rgb(15, 136, 235);
-}
+	.loginbtn:hover {
+		background: rgb(15, 136, 235);
+	}
 
-.registerbtn:hover {
-	background: rgb(15, 136, 235);
-}
+	.registerbtn:hover {
+		background: rgb(15, 136, 235);
+	}
 
-.btns {
-	position: absolute;
-	right: 15px;
-	top: 20px
-}
+	.btns {
+		position: absolute;
+		right: 15px;
+		top: 20px
+	}
 
-.btns_login {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
+	.btns_login {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
 
-.autocompleter {
-	width: 265px;
-	background: #ffffff;
-	position: absolute;
-	top: 40px;
-	left: 10px;
-	z-index: 100;
-	max-height: 280px;
-	overflow: auto;
-	border-bottom: 1px solid #ddd;
-}
+	.autocompleter {
+		width: 265px;
+		background: #ffffff;
+		position: absolute;
+		top: 40px;
+		left: 10px;
+		z-index: 100;
+		max-height: 280px;
+		overflow: auto;
+		border-bottom: 1px solid #ddd;
+	}
 
-.autocompleter-hint {
-	color: #ccc;
-	text-align: left;
-	top: -56px;
-	font-weight: 400;
-	left: 0;
-	width: 100%;
-	padding: 12px 12px 12px 13px;
-	font-size: 15px;
-	display: none;
-}
+	.autocompleter-hint {
+		color: #ccc;
+		text-align: left;
+		top: -56px;
+		font-weight: 400;
+		left: 0;
+		width: 100%;
+		padding: 12px 12px 12px 13px;
+		font-size: 15px;
+		display: none;
+	}
 
-.autocompleter,.autocompleter-hint {
-	position: absolute;
-}
+	.autocompleter,.autocompleter-hint {
+		position: absolute;
+	}
 
-.autocompleter-item {
-	text-align: left;
-	padding: 6px 12px;
-	color: #444;
-	font-size: 15px;
-	cursor: pointer;
-}
+	.autocompleter-item {
+		text-align: left;
+		padding: 6px 12px;
+		color: #444;
+		font-size: 15px;
+		cursor: pointer;
+	}
 
-.autocompleter-list {
-	box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
+	.autocompleter-list {
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
 
-.autocompleter-list li:hover {
-	background: #F2F2F2;
-}
+	.autocompleter-list li:hover {
+		background: #F2F2F2;
+	}
 
-.file-caption-main {
-    width: 65%;
-}
+	.file-caption-main {
+		width: 65%;
+	}
 </STYLE>
 
-	<!-- <DIV id="header" style="position: relative;">
-		<DIV id="logo" style="float: left; align: middle;">
-			<A href=""><IMG height="60" style="background:#F7FAFC"
-				alt="logo" src="./statics/images/logo.png"></A> bootstrap-3.3.7/static/images/my_logo.png
-		</DIV>
-		<FORM action="/" method="get">
-			<DIV align="right" class="input-group col-md-3 search_chart"
-				style="margin-top: 15px; margin-left: 100px; positon: relative;">
-				<INPUT name="keywords" class="form-control" id="keywords"
-					type="text" placeholder="请输入关键词" value=""><SPAN
-					class="input-group-btn"><BUTTON
-						class="btn btn-info btn-search" style="margin-left: 10px;"
-						type="submit">查找</BUTTON> </SPAN>
-			</DIV>
-		</FORM>
-		
-		<DIV class="btns_login">
-			<A class="fr registerbtn" style="color: white; margin-right: 20px;"
-				href="#">注册</A> <A
-				class="fr loginbtn" style="color: white;"
-				href="#">登录</A>
-		</DIV>
-	</DIV> -->
-	<#include "/top.html" >
-	<SCRIPT>
-    $(function(){
-        /* $.ajax({url:"/hot_keywords/",data:{p:$(this).val()},success:function(result){
+<!-- <DIV id="header" style="position: relative;">
+    <DIV id="logo" style="float: left; align: middle;">
+        <A href=""><IMG height="60" style="background:#F7FAFC"
+            alt="logo" src="./statics/images/logo.png"></A> bootstrap-3.3.7/static/images/my_logo.png
+    </DIV>
+    <FORM action="/" method="get">
+        <DIV align="right" class="input-group col-md-3 search_chart"
+            style="margin-top: 15px; margin-left: 100px; positon: relative;">
+            <INPUT name="keywords" class="form-control" id="keywords"
+                type="text" placeholder="请输入关键词" value=""><SPAN
+                class="input-group-btn"><BUTTON
+                    class="btn btn-info btn-search" style="margin-left: 10px;"
+                    type="submit">查找</BUTTON> </SPAN>
+        </DIV>
+    </FORM>
+
+    <DIV class="btns_login">
+        <A class="fr registerbtn" style="color: white; margin-right: 20px;"
+            href="#">注册</A> <A
+            class="fr loginbtn" style="color: white;"
+            href="#">登录</A>
+    </DIV>
+</DIV> -->
+<#include "/top.html" >
+<SCRIPT>
+	$(function(){
+		/* $.ajax({url:"/hot_keywords/",data:{p:$(this).val()},success:function(result){
              $('.search_chart').find('input').autocompleter({
                  source: result,
                  limit: 5,
@@ -173,228 +173,260 @@
              });.attr('src',"user.jpg");
           }}); */
 
-          //$("#outputImg").attr("src","http://www.scisy.org/ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
-          //$("#imgDownload").attr("href","http://www.scisy.org/ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
-          //alert($("#outputImg").attr("src"));
-    });
-    
- 	// 对上传的附件数据进行分析
-    function fileDataAnalysis(){
-    	  var filePath=$("#filePath").val();
-    	  if(null==filePath||""==filePath){
-    		  alert("请选择要分析的附件!");
-    		  return;
-    	  }
-    	  //var formData = $("#dataForm").serialize();			"#dataForm")[0]
-    	  //var formData = new FormData(document.getElementById("dataForm")[0]);
-    	  var formData = new FormData();
-    	  //var formData = new FormData($("#dataForm"));
-    	  console.log(formData);
-    	  //console.log($("#dataForm").serialize());
-    	  var plotType=$("#plotType").val();
-    	  formData.append("files", $("#filePath")[0].files[0]);
-    	  formData.append("plotType", $("#plotType").val());
-    	  formData.append("filePath", $("#filePath").val());
-    	  $.ajax({
-    	        type: 'post',
-    	        //data: {plotType:plotType,filePath:filePath},
-    	        data: formData,
-    	        //dataType: 'json',
-    	        url:'/dataAnalysis/dataAnalysis/fileAnalysis',
-    	        cache: false,
-    	        processData: false,//这个很有必要，不然不行
-    	        contentType: false,
-    	        error: function () {console.log("error");
-    	            //console.log(output);
-    	            alert("There was an error processing this page.");
-    	            return false;
-    	        },
-    	        complete: function (output) {
-    	        	console.log("complete");
-    	        	//console.log(output);
-    	            //$('#dataFormResults').html(output.responseText);
-    	        },
-    	        success:function(data){console.log("success:function");
-    	  	        //请求成功时
-    	        	console.log(data);
-    	  	        if(data.status=="success"){
-    	  	        	var imgPath = data.bizContent;
-    	  	        	//alert("生成图片路径：" + imgPath);
-    	  	        	//$("#outputImg").src=imgPath;
-    	  	        	// $("#outputImg").attr("src","http://www.scisy.org/"+imgPath);
-    	  	        	// $("#imgDownload").attr("href","http://www.scisy.org/"+imgPath);
-						$("#outputImg").attr("src","http://192.168.233.133"+imgPath);
-						$("#imgDownload").attr("href","http://192.168.233.133"+imgPath);
-    	  	        	$("#imgDownload").attr("download",imgPath);
-    	  	        	$("#outputImgDiv").show();
-    	  	        }else{
-    	  	        	alert("出现异常：" + data.message);
-    	  	        }
-    	  	    }
-    	    });
-    	  return false;
-    }
-    
- 	// 对文本框输入数据进行分析
-    function inputDataAnalysis(){
-  	  var formData = $("#dataForm").serialize();
-  	//console.log(formData);
-  	  var plotdata = $("#plotData").val();
-  	if(null==plotdata||""==plotdata){
-		  alert("请输入要分析的数据!");
-		  return;
-	  }
-  	 // alert("plotdata : " + plotdata);
-	  	$.ajax({
-	  		type: "post",
-	  	    url:'/dataAnalysis/dataAnalysis/analysis',
-	  	    //data: JSON.stringify(getFormData($("#dataForm"))),//formData,
-	  	  	data: formData,
-	  	    dataType: 'json',
-	  	    //data:{plotType:"plot_001",plotData:plotdata,dataAddress:""},
-	  	    //cache:false,//false是不缓存，true为缓存
-	  	    async:true,//true为异步，false为同步
-	  	    beforeSend:function(){
-	  	        //请求前
-	  	    },
-	  	    success:function(data){
-	  	    	console.log(data);
-	  	        //请求成功时
-	  	    	if(data.status=="success"){
-	  	        	var imgPath = data.bizContent;
-	  	        	//alert("生成图片路径：" + imgPath);
-	  	        	//$("#outputImg").src=imgPath;
-	  	        	// $("#outputImg").attr("src","http://www.scisy.org/"+imgPath);
-    	  	        // $("#imgDownload").attr("href","http://www.scisy.org/"+imgPath);
-					$("#outputImg").attr("src","http://192.168.233.133"+imgPath);
-					$("#imgDownload").attr("href","http://192.168.233.133"+imgPath);
+		//$("#outputImg").attr("src","http://192.168.233.135ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
+		//$("#imgDownload").attr("href","http://192.168.233.135ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
+		//alert($("#outputImg").attr("src"));
+	});
 
-    	  	      	$("#imgDownload").attr("download",imgPath);
-	  	        	$("#outputImgDiv").show();
-	  	        }else{
-	  	        	alert("出现异常：" + data.message);
-	  	        }
-	  	    },
-	  	    complete:function(){
-	  	        //请求结束时
-	  	    },
-	  	    error:function(){
-	  	        //请求失败时
-	  	    }
-	  	});
-  	  return false;
-  }
-    
+	// 对上传的附件数据进行分析
+	function fileDataAnalysis(){
+		var filePath=$("#filePath").val();
+		if(null==filePath||""==filePath){
+			alert("请选择要分析的附件!");
+			return;
+		}
+		//var formData = $("#dataForm").serialize();			"#dataForm")[0]
+		//var formData = new FormData(document.getElementById("dataForm")[0]);
+		var formData = new FormData();
+		//var formData = new FormData($("#dataForm"));
+		console.log(formData);
+		//console.log($("#dataForm").serialize());
+		var plotType=$("#plotType").val();
+		formData.append("files", $("#filePath")[0].files[0]);
+		formData.append("plotType", $("#plotType").val());
+		formData.append("filePath", $("#filePath").val());
+		$.ajax({
+			type: 'post',
+			//data: {plotType:plotType,filePath:filePath},
+			data: formData,
+			//dataType: 'json',
+			url:'/dataAnalysis/dataAnalysis/fileAnalysis',
+			cache: false,
+			processData: false,//这个很有必要，不然不行
+			contentType: false,
+			error: function () {console.log("error");
+				//console.log(output);
+				alert("There was an error processing this page.");
+				return false;
+			},
+			complete: function (output) {
+				console.log("complete");
+				//console.log(output);
+				//$('#dataFormResults').html(output.responseText);
+			},
+			success:function(data){console.log("success:function");
+				//请求成功时
+				console.log(data);
+				if(data.status=="success"){
+					var imgPath = data.bizContent;
+					//alert("生成图片路径：" + imgPath);
+					var sindex =imgPath.lastIndexOf("/");
+					var imageName=imgPath.substring(sindex+1);
+
+					//$("#outputImg").src=imgPath;
+					$("#outputImg").attr("src","http://192.168.233.135"+imgPath);
+					// $("#imgDownload").attr("href","http://192.168.233.135"+imgPath);
+					$("#imgDownload").attr("download",imgPath);
+					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.135"+imgPath+"', '"+imageName+"')");
+					$("#outputImgDiv").show();
+				}else{
+					alert("出现异常：" + data.message);
+				}
+			}
+		});
+		return false;
+	}
+
+	// 对文本框输入数据进行分析
+	function inputDataAnalysis(){
+		var formData = $("#dataForm").serialize();
+		//console.log(formData);
+		var plotdata = $("#plotData").val();
+		if(null==plotdata||""==plotdata){
+			alert("请输入要分析的数据!");
+			return;
+		}
+		// alert("plotdata : " + plotdata);
+		$.ajax({
+			type: "post",
+			url:'/dataAnalysis/dataAnalysis/analysis',
+			//data: JSON.stringify(getFormData($("#dataForm"))),//formData,
+			data: formData,
+			dataType: 'json',
+			//data:{plotType:"plot_001",plotData:plotdata,dataAddress:""},
+			//cache:false,//false是不缓存，true为缓存
+			async:true,//true为异步，false为同步
+			beforeSend:function(){
+				//请求前
+			},
+			success:function(data){
+				console.log(data);
+				//请求成功时
+				if(data.status=="success"){
+					var imgPath = data.bizContent;
+					//alert("生成图片路径：" + imgPath);
+					//$("#outputImg").src=imgPath;
+					var sindex =imgPath.lastIndexOf("/");
+					var imageName=imgPath.substring(sindex+1);
+					$("#outputImg").attr("src","http://192.168.233.135"+imgPath);
+					// $("#imgDownload").attr("href","http://192.168.233.135"+imgPath);
+					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.135"+imgPath+"', '"+imageName+"')");
+					$("#imgDownload").attr("download",imgPath);
+					$("#outputImgDiv").show();
+				}else{
+					alert("出现异常：" + data.message);
+				}
+			},
+			complete:function(){
+				//请求结束时
+			},
+			error:function(){
+				//请求失败时
+			}
+		});
+		return false;
+	}
+
+	function openDownloadDialog(url,fileName){
+		window.URL = window.URL || window.webkitURL;
+		if (typeof history.pushState == "function") {
+			var xhr = new XMLHttpRequest();
+			xhr.open(
+					"get",
+					"http://192.168.233.135:8888/dataAnalysis/downloadimg/download?fileName=" + fileName,
+					true);
+			xhr.responseType = "blob";
+			xhr.onload = function () {
+				if (this.status == 200) {
+					var blob = this.response;
+					var eleLink = document.createElement("a");
+					eleLink.download = fileName;
+					eleLink.href = URL.createObjectURL(blob);
+					console.log(URL.createObjectURL(blob)); //look look
+
+					eleLink.style.display = 'none';
+					// 触发点击
+					document.body.appendChild(eleLink);
+					eleLink.click();
+					// 然后移除
+					document.body.removeChild(eleLink);
+				}
+			}
+			xhr.send();
+		}
+	}
+
+
 </SCRIPT>
 
-	<div id="nav">
-	    <b style="color: rgba(0,0,0,.85);">本站在线工具</b>
-	    
-	        
-	</div>
+<div id="nav">
+	<b style="color: rgba(0,0,0,.85);">本站在线工具</b>
 
-	<DIV >
-		<DIV class="col-sm-5" id="section1">
-			<FORM action="" method="post" id="dataForm" enctype="multipart/form-data">
-				<INPUT name="plotType" id="plotType" type="hidden" value="plot_001">
-				<INPUT name="token" type="hidden" value="lLtFhz2zae7oXLz6srzIwAB8SDIBvERn2uiyRLNxRzTmIVFw7yhUq0eXpSBIbyPh">
-				注意：输入数据格式（行、列）必需与右侧示例一致，制表符分割<BR>1，数据来自excel，直接拷贝待绘图数据，粘贴到输入数据框即可<BR>2，数据来自txt，各列需要制表符（tab键）分割，直接拷贝数据，粘贴到输入数据框即可<BR>
-				<B>必需输入</B><BR> 绘图数据：<BR>
-				<TEXTAREA name="plotData" id="plotData"
-					required rows="8" cols="50"></TEXTAREA>&nbsp;&nbsp;&nbsp;&nbsp;
-				<button type="button" class="btn btn-default" onclick="inputDataAnalysis()">分析</button>
-				<BR><BR>
-				<input id="filePath" class="file" name="filePath" type="file" data-show-preview="false" 
-						 data-show-caption="true" data-show-remove="false" data-show-upload="false" data-allowed-file-extensions='["csv","xlsx","txt","xls"]'>
-				<button type="button" class="btn btn-default" onclick="fileDataAnalysis()">分析</button>
-				<BR><BR>
-				<B>可选输入：</B><BR> 图边距（图长宽比例不协调，或者文字被截断情况下使用<BR>
-				右必需大于左；上必需大于下）:<BR>左：<INPUT name="left_margin"
-					id="id_left_margin" type="number" min="0" max="1" step="any"
-					value="0.1">，右：<INPUT name="right_margin"
-					id="id_right_margin" type="number" min="0" max="1" step="any"
-					value="0.9"><BR>下：<INPUT name="bottom_margin"
-					id="id_bottom_margin" type="number" min="0" max="1" step="any"
-					value="0.1">，上：<INPUT name="top_margin" id="id_top_margin"
-					type="number" min="0" max="1" step="any" value="0.9"><BR>字体大小：百分比
-				<INPUT name="basic_pie_plot_percent_size"
-					id="id_basic_pie_plot_percent_size" type="number" step="any"
-					value="12">，分类：<INPUT name="basic_pie_plot_label_size"
-					id="id_basic_pie_plot_label_size" type="number" step="any"
-					value="12">
-				<!-- <BR>请选择颜色1（color1）： <INPUT
-					name="basic_pie_plot_color1"
-					class="colorfield_field jscolor {required:false}"
-					id="id_basic_pie_plot_color1" type="text" size="4" value="#1F77B4">
-				<BR>请选择颜色2（color2）： <INPUT name="basic_pie_plot_color2"
-					class="colorfield_field jscolor {required:false}"
-					id="id_basic_pie_plot_color2" type="text" size="4" value="#AEC7E8">
-				<BR>请选择颜色3（color3）： <INPUT name="basic_pie_plot_color3"
-					class="colorfield_field jscolor {required:false}"
-					id="id_basic_pie_plot_color3" type="text" size="4" value="#FF7F0E">
-				<BR>请选择颜色4（color4）： <INPUT name="basic_pie_plot_color4"
-					class="colorfield_field jscolor {required:false}"
-					id="id_basic_pie_plot_color4" type="text" size="4" value="#FFBB78">
-				<BR>请选择颜色5（color5）： <INPUT name="basic_pie_plot_color5"
-					class="colorfield_field jscolor {required:false}"
-					id="id_basic_pie_plot_color5" type="text" size="4" value="#2CA02C">
-				<BR>请选择颜色6（color6）： <INPUT name="basic_pie_plot_color6"
-					class="colorfield_field jscolor {required:false}"
-					id="id_basic_pie_plot_color6" type="text" size="4" value="#98DF8A">
-				<BR>请选择颜色7（color7）： <INPUT name="basic_pie_plot_color7"
-					class="colorfield_field jscolor {required:false}"
-					id="id_basic_pie_plot_color7" type="text" size="4" value="#D62728">
-				<BR>请选择颜色8（color8）： <INPUT name="basic_pie_plot_color8"
-					class="colorfield_field jscolor {required:false}"
-					id="id_basic_pie_plot_color8" type="text" size="4" value="#FF9896">
-				<BR>请选择颜色9（color9）： <INPUT name="basic_pie_plot_color9"
-					class="colorfield_field jscolor {required:false}"
-					id="id_basic_pie_plot_color9" type="text" size="4" value="#9467BD">
-				<BR>请选择颜色10（color10）： <INPUT name="basic_pie_plot_color10"
-					class="colorfield_field jscolor {required:false}"
-					id="id_basic_pie_plot_color10" type="text" size="4" value="#8C564B">
-				<BR>
-				<BR>请输入要突出显示的部分(explode)，英文逗号分割例如：A,B：<BR>
-				<TEXTAREA name="basic_pie_plot_explode"
-					id="id_basic_pie_plot_explode" rows="1" cols="50"></TEXTAREA>
-				<BR>
-				<BR>是否绘制legend，默认不绘制<BR>no<INPUT name="legend"
-					type="radio" value="no"> yes<INPUT name="legend"
-					type="radio" value="yes"> <BR>默认legend放在饼图上方以尽量避免遮挡，默认水平显示（即1行）<BR>
-				若有8个元素，设置为4列，那么legend就显示两行<BR> 请输入legend列数（ncol）：<INPUT
-					name="basic_pie_plot_legend_ncol"
-					id="id_basic_pie_plot_legend_ncol" type="number" value="6"><BR>
-				<BR>
-				<BR>顺时针还是逆时针绘制，默认逆时针<BR> 顺时针<INPUT name="counterclock"
-					type="radio" value="no"> 逆时针<INPUT name="counterclock"
-					type="radio" value="yes"> <BR>
-				<DIV style="color: red;">此图将消耗 0 微币</DIV>
-				<BR> -->
-				<!-- <INPUT class="btn btn-primary" id="tijiao" type="submit" value="提交"> -->
-			</FORM>
-		</DIV>
-		
-		
-		<DIV class="col-sm-6  offset-1" id="section2">
-			<div>
-				<IMG style="height: 280px;" alt="输出" id="outputImg" src="./statics/images/blank.png"  οnerrοr="this.style.display='none'" />
-				<BR>
-				<div id="outputImgDiv" style="display: none;">
+
+</div>
+
+<DIV >
+	<DIV class="col-sm-5" id="section1">
+		<FORM action="" method="post" id="dataForm" enctype="multipart/form-data">
+			<INPUT name="plotType" id="plotType" type="hidden" value="plot_001">
+			<INPUT name="token" type="hidden" value="lLtFhz2zae7oXLz6srzIwAB8SDIBvERn2uiyRLNxRzTmIVFw7yhUq0eXpSBIbyPh">
+			注意：输入数据格式（行、列）必需与右侧示例一致，制表符分割<BR>1，数据来自excel，直接拷贝待绘图数据，粘贴到输入数据框即可<BR>2，数据来自txt，各列需要制表符（tab键）分割，直接拷贝数据，粘贴到输入数据框即可<BR>
+			<B>必需输入</B><BR> 绘图数据：<BR>
+			<TEXTAREA name="plotData" id="plotData"
+					  required rows="8" cols="50"></TEXTAREA>&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="button" class="btn btn-default" onclick="inputDataAnalysis()">分析</button>
+			<BR><BR>
+			<input id="filePath" class="file" name="filePath" type="file" data-show-preview="false"
+				   data-show-caption="true" data-show-remove="false" data-show-upload="false" data-allowed-file-extensions='["csv","xlsx","txt","xls"]'>
+			<button type="button" class="btn btn-default" onclick="fileDataAnalysis()">分析</button>
+			<BR><BR>
+			<B>可选输入：</B><BR> 图边距（图长宽比例不协调，或者文字被截断情况下使用<BR>
+			右必需大于左；上必需大于下）:<BR>左：<INPUT name="left_margin"
+										id="id_left_margin" type="number" min="0" max="1" step="any"
+										value="0.1">，右：<INPUT name="right_margin"
+															  id="id_right_margin" type="number" min="0" max="1" step="any"
+															  value="0.9"><BR>下：<INPUT name="bottom_margin"
+																					   id="id_bottom_margin" type="number" min="0" max="1" step="any"
+																					   value="0.1">，上：<INPUT name="top_margin" id="id_top_margin"
+																											 type="number" min="0" max="1" step="any" value="0.9"><BR>字体大小：百分比
+			<INPUT name="basic_pie_plot_percent_size"
+				   id="id_basic_pie_plot_percent_size" type="number" step="any"
+				   value="12">，分类：<INPUT name="basic_pie_plot_label_size"
+										 id="id_basic_pie_plot_label_size" type="number" step="any"
+										 value="12">
+			<!-- <BR>请选择颜色1（color1）： <INPUT
+                name="basic_pie_plot_color1"
+                class="colorfield_field jscolor {required:false}"
+                id="id_basic_pie_plot_color1" type="text" size="4" value="#1F77B4">
+            <BR>请选择颜色2（color2）： <INPUT name="basic_pie_plot_color2"
+                class="colorfield_field jscolor {required:false}"
+                id="id_basic_pie_plot_color2" type="text" size="4" value="#AEC7E8">
+            <BR>请选择颜色3（color3）： <INPUT name="basic_pie_plot_color3"
+                class="colorfield_field jscolor {required:false}"
+                id="id_basic_pie_plot_color3" type="text" size="4" value="#FF7F0E">
+            <BR>请选择颜色4（color4）： <INPUT name="basic_pie_plot_color4"
+                class="colorfield_field jscolor {required:false}"
+                id="id_basic_pie_plot_color4" type="text" size="4" value="#FFBB78">
+            <BR>请选择颜色5（color5）： <INPUT name="basic_pie_plot_color5"
+                class="colorfield_field jscolor {required:false}"
+                id="id_basic_pie_plot_color5" type="text" size="4" value="#2CA02C">
+            <BR>请选择颜色6（color6）： <INPUT name="basic_pie_plot_color6"
+                class="colorfield_field jscolor {required:false}"
+                id="id_basic_pie_plot_color6" type="text" size="4" value="#98DF8A">
+            <BR>请选择颜色7（color7）： <INPUT name="basic_pie_plot_color7"
+                class="colorfield_field jscolor {required:false}"
+                id="id_basic_pie_plot_color7" type="text" size="4" value="#D62728">
+            <BR>请选择颜色8（color8）： <INPUT name="basic_pie_plot_color8"
+                class="colorfield_field jscolor {required:false}"
+                id="id_basic_pie_plot_color8" type="text" size="4" value="#FF9896">
+            <BR>请选择颜色9（color9）： <INPUT name="basic_pie_plot_color9"
+                class="colorfield_field jscolor {required:false}"
+                id="id_basic_pie_plot_color9" type="text" size="4" value="#9467BD">
+            <BR>请选择颜色10（color10）： <INPUT name="basic_pie_plot_color10"
+                class="colorfield_field jscolor {required:false}"
+                id="id_basic_pie_plot_color10" type="text" size="4" value="#8C564B">
+            <BR>
+            <BR>请输入要突出显示的部分(explode)，英文逗号分割例如：A,B：<BR>
+            <TEXTAREA name="basic_pie_plot_explode"
+                id="id_basic_pie_plot_explode" rows="1" cols="50"></TEXTAREA>
+            <BR>
+            <BR>是否绘制legend，默认不绘制<BR>no<INPUT name="legend"
+                type="radio" value="no"> yes<INPUT name="legend"
+                type="radio" value="yes"> <BR>默认legend放在饼图上方以尽量避免遮挡，默认水平显示（即1行）<BR>
+            若有8个元素，设置为4列，那么legend就显示两行<BR> 请输入legend列数（ncol）：<INPUT
+                name="basic_pie_plot_legend_ncol"
+                id="id_basic_pie_plot_legend_ncol" type="number" value="6"><BR>
+            <BR>
+            <BR>顺时针还是逆时针绘制，默认逆时针<BR> 顺时针<INPUT name="counterclock"
+                type="radio" value="no"> 逆时针<INPUT name="counterclock"
+                type="radio" value="yes"> <BR>
+            <DIV style="color: red;">此图将消耗 0 微币</DIV>
+            <BR> -->
+			<!-- <INPUT class="btn btn-primary" id="tijiao" type="submit" value="提交"> -->
+		</FORM>
+	</DIV>
+
+
+	<DIV class="col-sm-6  offset-1" id="section2">
+		<div>
+			<IMG style="height: 280px;" alt="输出" id="outputImg" src="./statics/images/blank.png"  οnerrοr="this.style.display='none'" />
+			<BR>
+			<div id="outputImgDiv" style="display: none;">
 				<a href="#" id="imgDownload" download="plot_001.png">下载图片</a></div>
-			</div>
-			<H3 align="center">2D2组Venn图</H3>
-			<!-- 定义了10种可选颜色，超过10种使用默认颜色，最多可绘制20个数据<BR> -->
-			数据包含两列，制表符分割：第一列是名字，第二列是名字对应的值<BR>
-			<TABLE class="table show_chart table-bordered">
-				<TBODY>
-					<TR>
-						<TD scope="col">输出样例</TD>
-						<TD scope="col"><IMG height="200" id="sampleImg"
-							src="./statics/images/ven_sample.png" ></TD>  <!-- "bootstrap-3.3.7/static/images/11002_basic_2D_pie_plot.png" -->
-					</TR>
-					<TR>
-						<TD scope="col">输入样例</TD>
-						<TD scope="col" ><PRE style="height: 200px">class	value
+		</div>
+		<H3 align="center">2D2组Venn图</H3>
+		<!-- 定义了10种可选颜色，超过10种使用默认颜色，最多可绘制20个数据<BR> -->
+		数据包含两列，制表符分割：第一列是名字，第二列是名字对应的值<BR>
+		<TABLE class="table show_chart table-bordered">
+			<TBODY>
+			<TR>
+				<TD scope="col">输出样例</TD>
+				<TD scope="col"><IMG height="200" id="sampleImg"
+									 src="./statics/images/ven_sample.png" ></TD>  <!-- "bootstrap-3.3.7/static/images/11002_basic_2D_pie_plot.png" -->
+			</TR>
+			<TR>
+				<TD scope="col">输入样例</TD>
+				<TD scope="col" ><PRE style="height: 200px">class	value
 SERTM1	DSC3
 ITLN1	ESCO1
 PEX5L	COL4A1
@@ -476,46 +508,46 @@ AOX1
 CLUH
 KCNB1
 SRGAP2
-EIF5B	
+EIF5B
 ARHGAP18
 SYNM
 CLASP1
 ZFPM2
 CLDN15
 </PRE></TD>
-					</TR>
-				</TBODY>
-			</TABLE>
-			<BR>
-			<B>常见问题</B>
-			<LI>1，如何作图？</LI>1，准备作图数据；2，用excel打开数据，调整；3，将excel调整后的数据（格式与示例一致）粘贴到输入框；4，选择参数；5，提交出图
-			<LI>2，为什么不出图？</LI>
-			程序对输入格式有严格要求。请务必仔细查看右侧说明及示例数据。常见错误包括：非制表符分割，数据列数不对，没有带title等<BR>
-			<LI>3，导出图片？</LI>低分辨率：QQ截图，日常使用<BR>
-			矢量图：在生成的图上点击鼠标右键，在弹出的窗口中选择另存为（直接是svg格式文件，文件后缀不用改）。推荐使用<B>chrome浏览器</B>导出图片
-			<LI>4，编辑图片，以满足杂志需求？</LI>默认Arial字体，下载<A href="https://inkscape.org/"
-				target="_blank">Inkscape</A>软件（最兼容，推荐，<A
-				href="http://www.bioinformatics.com.cn/static/others/inkscape_tips.html"
-				target="blank">inkscape常用技巧</A>），打开另存的svg文件，修改布局，文字等后，导出pdf或其他格式图片<BR>
-			<LI>5，如何引用，how to cite？</LI>
-			本站主要以matplotlib和各种R包绘图，由于本站内容未公开发表paper，如需引用，可使用如下格式：<BR>Heatmap
-			was plotted by http://www.bioinformatics.com.cn, an online platform
-			for data analysis and visualization.<BR>
-		</DIV>
+			</TR>
+			</TBODY>
+		</TABLE>
+		<BR>
+		<B>常见问题</B>
+		<LI>1，如何作图？</LI>1，准备作图数据；2，用excel打开数据，调整；3，将excel调整后的数据（格式与示例一致）粘贴到输入框；4，选择参数；5，提交出图
+		<LI>2，为什么不出图？</LI>
+		程序对输入格式有严格要求。请务必仔细查看右侧说明及示例数据。常见错误包括：非制表符分割，数据列数不对，没有带title等<BR>
+		<LI>3，导出图片？</LI>低分辨率：QQ截图，日常使用<BR>
+		矢量图：在生成的图上点击鼠标右键，在弹出的窗口中选择另存为（直接是svg格式文件，文件后缀不用改）。推荐使用<B>chrome浏览器</B>导出图片
+		<LI>4，编辑图片，以满足杂志需求？</LI>默认Arial字体，下载<A href="https://inkscape.org/"
+											   target="_blank">Inkscape</A>软件（最兼容，推荐，<A
+			href="http://www.bioinformatics.com.cn/static/others/inkscape_tips.html"
+			target="blank">inkscape常用技巧</A>），打开另存的svg文件，修改布局，文字等后，导出pdf或其他格式图片<BR>
+		<LI>5，如何引用，how to cite？</LI>
+		本站主要以matplotlib和各种R包绘图，由于本站内容未公开发表paper，如需引用，可使用如下格式：<BR>Heatmap
+		was plotted by http://www.bioinformatics.com.cn, an online platform
+		for data analysis and visualization.<BR>
 	</DIV>
-	<DIV id="footer" style="background: rgb(237, 237, 237);">
-		<DIV style="text-align: center;">
+</DIV>
+<DIV id="footer" style="background: rgb(237, 237, 237);">
+	<DIV style="text-align: center;">
 			<SPAN>在线数据分析，作图，可视化，专注于生命科学医学！<A
-				href="#" target="_blank"><IMG title="在线作图，在线" alt="在线作图，在线"
-					src="./statics/images/group.png" border="0"></A></SPAN><BR>
-			<SPAN>人工审核，信息尽量填写完整。测试账号：********，密码：***********。&nbsp;
+					href="#" target="_blank"><IMG title="在线作图，在线" alt="在线作图，在线"
+												  src="./statics/images/group.png" border="0"></A></SPAN><BR>
+		<SPAN>人工审核，信息尽量填写完整。测试账号：********，密码：***********。&nbsp;
 				<A href=""
-				target="_blank">作图使用手册</A>
+				   target="_blank">作图使用手册</A>
 			</SPAN>
-		</DIV>
-		<A style="margin-top: 5px; display: inline-block;"
-			href="">粤IPC备00000000</A>
-		<!-- <SCRIPT src="数据库在线统计与画图工具_files/f.txt" type="text/javascript"></SCRIPT> -->
 	</DIV>
+	<A style="margin-top: 5px; display: inline-block;"
+	   href="">粤IPC备00000000</A>
+	<!-- <SCRIPT src="数据库在线统计与画图工具_files/f.txt" type="text/javascript"></SCRIPT> -->
+</DIV>
 </BODY>
 </HTML>

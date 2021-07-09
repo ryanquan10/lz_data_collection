@@ -1,11 +1,11 @@
 package com.highy.modules.plot.controller;
 
+import com.highy.modules.plot.controller.model.Message;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.highy.modules.plot.controller.model.Message;
 import com.highy.modules.plot.controller.model.RestResponse;
  
 @RestController
@@ -20,7 +20,7 @@ public class DataCollectionController {
 	 * @return
 	 */
 	@RequestMapping(value = "/push")
-	public RestResponse receive(@RequestBody(required = false) Message message,@RequestHeader(name = "token", required = false) String token) {
+	public RestResponse receive(@RequestBody(required = false) Message message, @RequestHeader(name = "token", required = false) String token) {
 		 //
 		if(message==null) {
 			

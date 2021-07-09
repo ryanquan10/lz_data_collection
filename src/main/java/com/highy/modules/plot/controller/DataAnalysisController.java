@@ -2,6 +2,7 @@ package com.highy.modules.plot.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -11,6 +12,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.rosuda.JRI.REXP;
 import org.rosuda.JRI.Rengine;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,6 +37,7 @@ public class DataAnalysisController {
 	 * @return
 	 */
 	@RequestMapping(value = "/analysis")
+	@CrossOrigin
 	public RestResponse analysis(HttpServletRequest request, AnalysisDataMessage message) {
 		RestResponse response = new RestResponse<>(); 
 		response.setCode(HttpStatus.OK.value());
@@ -80,7 +83,7 @@ public class DataAnalysisController {
 				        	List<String> a1 = new ArrayList<String>();
 				        	List<String> a2 = new ArrayList<String>();
 				        	// 转二维数组
-							String arra[] = plotData.split("\r\n");
+							String arra[] = plotData.toLowerCase().split("\r\n");
 
 
 
