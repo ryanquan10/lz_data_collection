@@ -226,7 +226,7 @@
 					//$("#outputImg").src=imgPath;
 					$("#outputImg").attr("src","http://192.168.233.135"+imgPath);
 					// $("#imgDownload").attr("href","http://192.168.233.135"+imgPath);
-					$("#imgDownload").attr("download",imgPath);
+					// $("#imgDownload").attr("download",imgPath);
 					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.135"+imgPath+"', '"+imageName+"')");
 					$("#outputImgDiv").show();
 				}else{
@@ -271,7 +271,7 @@
 					$("#outputImg").attr("src","http://192.168.233.135"+imgPath);
 					// $("#imgDownload").attr("href","http://192.168.233.135"+imgPath);
 					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.135"+imgPath+"', '"+imageName+"')");
-					$("#imgDownload").attr("download",imgPath);
+					// $("#imgDownload").attr("download",imgPath);
 					$("#outputImgDiv").show();
 				}else{
 					alert("出现异常：" + data.message);
@@ -412,7 +412,7 @@
 			<IMG style="height: 280px;" alt="输出" id="outputImg" src="./statics/images/blank.png"  οnerrοr="this.style.display='none'" />
 			<BR>
 			<div id="outputImgDiv" style="display: none;">
-				<a href="#" id="imgDownload" download="plot_001.png">下载图片</a></div>
+				<a href="#" id="imgDownload" >下载图片</a></div> <!--				download="plot_001.png"-->
 		</div>
 		<H3 align="center">2D2组Venn图</H3>
 		<!-- 定义了10种可选颜色，超过10种使用默认颜色，最多可绘制20个数据<BR> -->

@@ -21,6 +21,7 @@ com/highy/modules/message/service/impl/SysMailTemplateServiceImpl.class
 com/highy/modules/security/password/PasswordEncoder.class
 com/highy/modules/plot/service/SingleRengine$TextConsole.class
 com/highy/modules/security/user/SecurityUser.class
+com/highy/common/config/CorsConfig.class
 com/highy/modules/sys/dao/SysUserDao.class
 com/highy/modules/sys/dto/CaptchaRecordDTO.class
 com/highy/modules/sys/dao/CaptchaRecordDao.class
@@ -98,6 +99,7 @@ com/highy/modules/sys/service/impl/SysDictServiceImpl.class
 com/highy/modules/sys/dao/SysParamsDao.class
 com/highy/modules/sys/service/SysLanguageService.class
 com/highy/common/constant/Constant.class
+com/highy/modules/plot/controller/DownloadImageController.class
 com/highy/modules/sys/dto/SysRoleDTO.class
 com/highy/modules/sys/service/SysMenuService.class
 com/highy/modules/sys/service/impl/SysRoleServiceImpl.class

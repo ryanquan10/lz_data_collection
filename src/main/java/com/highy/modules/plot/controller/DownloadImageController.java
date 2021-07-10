@@ -17,9 +17,9 @@ import java.nio.file.Paths;
 @RequestMapping(value = "/downloadimg/")
 public class DownloadImageController {
 
-    //
+
     static String document = "/home/qy/code/data-collection/";
-//    static String document = "/home/qy/code/data-collection/";
+//    static String document = "/home/product";
 
     @RequestMapping(value = "/download")
     public byte[] downLoad(@RequestParam("fileName") String fileName) throws IOException {

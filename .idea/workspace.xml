@@ -5,30 +5,192 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ff8e4b-09c3-48ca-8552-011440b4aad0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/common/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataCollectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataCollectionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/statics/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modules/plot/plotbasic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/modules/plot/plotbasic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webApp/plot_basic12.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webApp/plot_basic12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/controller/DataAnalysisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/controller/DataAnalysisController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/statics/bootstrap-3.3.7/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/statics/bootstrap-3.3.7/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/statics/images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.highy.modules.sys.dao.CaptchaRecordDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.highy.modules.sys.dao.CaptchaRecordDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_03f033ef-c3a7-418f-aad3-08b8f171af43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_03f033ef-c3a7-418f-aad3-08b8f171af43.png.2021-07-09_06-22-54.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_04294b2b-b62f-474d-a006-fda633f46eaf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_04294b2b-b62f-474d-a006-fda633f46eaf.png.2021-07-09_08-03-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_0c07cd79-9fff-49bf-bf6d-d0be1dba91d3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_0c07cd79-9fff-49bf-bf6d-d0be1dba91d3.png.2021-07-09_06-15-27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_10bb63e6-d535-4eb0-a0cd-713aab8ee3cd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_10bb63e6-d535-4eb0-a0cd-713aab8ee3cd.png.2021-07-09_09-26-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_12bca7f9-239c-4320-8b72-2bf54eb9c48a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_12bca7f9-239c-4320-8b72-2bf54eb9c48a.png.2021-07-09_17-02-53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_135e9580-6760-4a83-9e20-58b089684e8c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_135e9580-6760-4a83-9e20-58b089684e8c.png.2021-07-09_14-41-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_16144634-f1ab-4a7d-917d-898480379a03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_16144634-f1ab-4a7d-917d-898480379a03.png.2021-07-05_16-06-49.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_182d03d9-694e-447e-a826-f2c27f62e0bf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_182d03d9-694e-447e-a826-f2c27f62e0bf.png.2021-07-09_14-28-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_1cb50c39-59d7-4952-9290-c87a6740e7f8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_1cb50c39-59d7-4952-9290-c87a6740e7f8.png.2021-07-09_13-47-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_236c70cc-dc7d-4970-a984-6ea951ce0033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_236c70cc-dc7d-4970-a984-6ea951ce0033.png.2021-07-09_08-03-20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_25d85a82-9ed7-4343-bb8e-6d05d5209537.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_25d85a82-9ed7-4343-bb8e-6d05d5209537.png.2021-07-09_06-08-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_27090f61-7709-4d43-a115-f1215885ec1d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_27090f61-7709-4d43-a115-f1215885ec1d.png.2021-07-09_09-38-33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_27e56c20-8c27-4190-856c-515ba30e22fd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_27e56c20-8c27-4190-856c-515ba30e22fd.png.2021-07-09_13-41-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_297ce563-1b73-4820-ac9b-f8e90a5dd0de.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_297ce563-1b73-4820-ac9b-f8e90a5dd0de.png.2021-07-09_08-40-36.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_2c5b1b1d-c3c5-4235-b55f-347b19c63369.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_2c5b1b1d-c3c5-4235-b55f-347b19c63369.png.2021-07-09_08-11-25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_2e3a3895-a015-4425-b3f2-d2161507ee7a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_2e3a3895-a015-4425-b3f2-d2161507ee7a.png.2021-07-09_15-44-56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_31a1448d-19e4-481a-be43-a934ad95e115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_31a1448d-19e4-481a-be43-a934ad95e115.png.2021-07-09_07-51-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_364f6d9c-52c0-4c16-aac3-942f4bdd862c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_364f6d9c-52c0-4c16-aac3-942f4bdd862c.png.2021-07-09_08-22-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_38166f02-8e5a-412e-a775-df462ae9af46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_38166f02-8e5a-412e-a775-df462ae9af46.png.2021-07-09_16-53-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_381695cb-a533-4ca3-8e0a-fcfea8026399.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_381695cb-a533-4ca3-8e0a-fcfea8026399.png.2021-07-09_03-16-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_3ad85d31-09b9-482b-9f56-48253cffe42c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_3ad85d31-09b9-482b-9f56-48253cffe42c.png.2021-07-09_15-33-45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_3df1dbf4-a964-4b28-a322-1c692dc5a710.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_3df1dbf4-a964-4b28-a322-1c692dc5a710.png.2021-07-09_13-51-09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_400b187c-06d7-4ca9-8482-c2a71ed68a57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_400b187c-06d7-4ca9-8482-c2a71ed68a57.png.2021-07-09_08-43-21.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_419930d9-e44e-4af2-a557-518247ab78e8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_419930d9-e44e-4af2-a557-518247ab78e8.png.2021-07-09_08-22-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4216c169-b365-4a49-bef0-c90658b387fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4216c169-b365-4a49-bef0-c90658b387fb.png.2021-07-09_17-07-43.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_447711b3-a04d-40fb-ac66-6998d1e0a328.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_447711b3-a04d-40fb-ac66-6998d1e0a328.png.2021-07-09_09-37-46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4665e307-e1ed-4895-9488-e03b40c1fa43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4665e307-e1ed-4895-9488-e03b40c1fa43.png.2021-07-09_08-14-36.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4b1e6edc-15c8-434d-9c9a-ce42e27e9ef3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4b1e6edc-15c8-434d-9c9a-ce42e27e9ef3.png.2021-07-09_06-38-32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4e42fcc9-b28f-4d7a-9b0a-9267de4e09a1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4e42fcc9-b28f-4d7a-9b0a-9267de4e09a1.png.2021-07-09_08-06-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4f99692c-f860-4960-9221-30c740b08305.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4f99692c-f860-4960-9221-30c740b08305.png.2021-07-09_09-26-43.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4feb3705-6165-472d-8d14-bf4e1831ae40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4feb3705-6165-472d-8d14-bf4e1831ae40.png.2021-07-09_08-00-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_51667a97-2fab-40ec-98ba-429466884a4f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_51667a97-2fab-40ec-98ba-429466884a4f.png.2021-07-09_09-58-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_5771bba2-7ed6-45a1-be60-e736cd3a4876.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_5771bba2-7ed6-45a1-be60-e736cd3a4876.png.2021-07-09_17-10-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_588e4eb4-c41a-40be-be80-66ceec6ab180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_588e4eb4-c41a-40be-be80-66ceec6ab180.png.2021-07-09_15-36-53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_5bb8512d-fc9b-47c9-a6fa-885b6d306401.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_5bb8512d-fc9b-47c9-a6fa-885b6d306401.png.2021-07-09_16-29-58.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_5e583999-39d5-437f-978d-7f2c25cf31d3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_5e583999-39d5-437f-978d-7f2c25cf31d3.png.2021-07-09_14-40-32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_6212506f-aaaa-46c9-b545-47c5b112c790.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_6212506f-aaaa-46c9-b545-47c5b112c790.png.2021-07-09_09-42-35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_62d09e81-b5b2-427a-abbb-62f907ad96be.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_62d09e81-b5b2-427a-abbb-62f907ad96be.png.2021-07-09_15-24-07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_63731639-e1c9-424d-8a83-17e5e87fc5e8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_63731639-e1c9-424d-8a83-17e5e87fc5e8.png.2021-07-09_10-07-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_66b7e28e-15c5-4998-9c49-5ea766369de0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_66b7e28e-15c5-4998-9c49-5ea766369de0.png.2021-07-09_09-00-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_6ca60c1c-509d-4fea-ab2d-679b7f384ee9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_6ca60c1c-509d-4fea-ab2d-679b7f384ee9.png.2021-07-09_06-08-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_6f9b1d26-f941-4d21-bc7c-31b0b4d46bed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_6f9b1d26-f941-4d21-bc7c-31b0b4d46bed.png.2021-07-09_14-21-26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_74434ec5-03a5-4457-9957-25ceb18d0649.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_74434ec5-03a5-4457-9957-25ceb18d0649.png.2021-07-09_09-01-38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_756f3514-8f4b-4923-8c41-13dd968c890d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_756f3514-8f4b-4923-8c41-13dd968c890d.png.2021-07-09_09-42-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_774af30e-7093-40c8-8b78-ef64bd024d4b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_774af30e-7093-40c8-8b78-ef64bd024d4b.png.2021-07-09_08-10-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_801cc024-8b17-4ffe-a509-1ceffad3e7dc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_801cc024-8b17-4ffe-a509-1ceffad3e7dc.png.2021-07-09_09-27-54.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_826fdf35-96d5-4131-b922-37cba4baa6d6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_826fdf35-96d5-4131-b922-37cba4baa6d6.png.2021-07-09_16-00-37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_8df9843f-eb8c-4eee-889c-f88821347228.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_8df9843f-eb8c-4eee-889c-f88821347228.png.2021-07-09_07-03-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_8ff09acd-5526-4f99-9f58-a4ca9a85290b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_8ff09acd-5526-4f99-9f58-a4ca9a85290b.png.2021-07-09_07-10-54.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9524cceb-0a52-48db-80a7-c36a8d058fe3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9524cceb-0a52-48db-80a7-c36a8d058fe3.png.2021-07-09_08-21-09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_95512eb6-ff3d-4109-bbe1-3b84280fcfa7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_95512eb6-ff3d-4109-bbe1-3b84280fcfa7.png.2021-07-07_07-39-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_99eade50-6964-46f3-b539-227284030eac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_99eade50-6964-46f3-b539-227284030eac.png.2021-07-09_09-50-37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9a7e51dc-dd26-41e7-95a2-7653f0aeb81f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9a7e51dc-dd26-41e7-95a2-7653f0aeb81f.png.2021-07-09_13-21-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9c0ab3d6-2e7d-4c6f-bb05-fd400aacfc1f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9c0ab3d6-2e7d-4c6f-bb05-fd400aacfc1f.png.2021-07-09_15-20-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9d30b75a-809f-4a7f-b2f7-13c1cea08008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9d30b75a-809f-4a7f-b2f7-13c1cea08008.png.2021-07-09_09-12-03.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9f527eea-8b8d-4ca3-ab90-e765c6e8cbd4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9f527eea-8b8d-4ca3-ab90-e765c6e8cbd4.png.2021-07-09_10-10-50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9ff61365-6fcb-44c4-9c8b-c632c846c095.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9ff61365-6fcb-44c4-9c8b-c632c846c095.png.2021-07-09_06-51-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a28a71ba-95c1-4ac9-b02d-d0632de5db00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a28a71ba-95c1-4ac9-b02d-d0632de5db00.png.2021-07-09_08-36-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a4b043fa-200a-4e5c-91cb-2f8c84260f0e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a4b043fa-200a-4e5c-91cb-2f8c84260f0e.png.2021-07-09_05-14-54.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a78a10c0-8128-4deb-ab0a-79a3072ff811.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a78a10c0-8128-4deb-ab0a-79a3072ff811.png.2021-07-09_15-48-39.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b398a5b2-c80c-4a8c-8347-bc5a4dd1ee59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b398a5b2-c80c-4a8c-8347-bc5a4dd1ee59.png.2021-07-09_09-01-07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b5032945-8a37-4b24-96d8-a7dabada30f1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b5032945-8a37-4b24-96d8-a7dabada30f1.png.2021-07-09_13-58-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b70c62bd-f339-4040-8730-41f421eaabfd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b70c62bd-f339-4040-8730-41f421eaabfd.png.2021-07-09_06-36-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b7109e24-dbc2-46e9-9253-36af39645d39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b7109e24-dbc2-46e9-9253-36af39645d39.png.2021-07-09_09-09-03.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b7a83e64-7180-4ffd-8f2d-1793cb79ef91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b7a83e64-7180-4ffd-8f2d-1793cb79ef91.png.2021-07-09_15-44-25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c0aa9018-2850-4e76-a59f-ebca82dd81b0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c0aa9018-2850-4e76-a59f-ebca82dd81b0.png.2021-07-09_13-21-49.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c1b5f847-9eff-4067-bace-713acd607294.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c1b5f847-9eff-4067-bace-713acd607294.png.2021-07-09_07-52-05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c43be099-6a9e-42d0-839e-616693073ba7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c43be099-6a9e-42d0-839e-616693073ba7.png.2021-07-09_06-51-57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_cbbc7d36-bc5e-443b-8053-34154362cbc6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_cbbc7d36-bc5e-443b-8053-34154362cbc6.png.2021-07-09_06-53-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_cfe693bd-670f-42bf-aced-3437bb347767.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_cfe693bd-670f-42bf-aced-3437bb347767.png.2021-07-09_06-53-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_d1109ef5-c80a-4ef4-9075-50f5e3afcd77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_d1109ef5-c80a-4ef4-9075-50f5e3afcd77.png.2021-07-09_15-24-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_d3a6ffb0-b2bd-4248-b73f-fbbdeef41383.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_d3a6ffb0-b2bd-4248-b73f-fbbdeef41383.png.2021-07-09_14-04-28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_df24a969-86cd-44eb-969d-b3b13c696c00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_df24a969-86cd-44eb-969d-b3b13c696c00.png.2021-07-09_09-01-59.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_df78de2f-c86b-4f32-b4b1-7534f57b4a9e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_df78de2f-c86b-4f32-b4b1-7534f57b4a9e.png.2021-07-09_13-29-43.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_e1538777-b238-4d5a-b9b3-e4b083392cd2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_e1538777-b238-4d5a-b9b3-e4b083392cd2.png.2021-07-09_14-35-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_e433f62e-2922-40db-96a6-d44858903517.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_e433f62e-2922-40db-96a6-d44858903517.png.2021-07-05_15-59-34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_e5526517-da70-4e1f-a9c9-37154ac1d7b7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_e5526517-da70-4e1f-a9c9-37154ac1d7b7.png.2021-07-05_16-01-00.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_e94ee9b8-5371-4d7c-a902-09c20c7a51c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_e94ee9b8-5371-4d7c-a902-09c20c7a51c8.png.2021-07-09_03-54-53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_ec5e7c55-c7a5-4642-af5a-ffd1921ea48a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_ec5e7c55-c7a5-4642-af5a-ffd1921ea48a.png.2021-07-09_14-52-43.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f2986960-6026-471f-8a15-1ee8dacd9240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f2986960-6026-471f-8a15-1ee8dacd9240.png.2021-07-09_14-44-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f36f78c2-537e-4584-bb9c-1b20b4a824f8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f36f78c2-537e-4584-bb9c-1b20b4a824f8.png.2021-07-09_03-56-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f3d52ac9-d2dd-4fb9-98f1-f9e53cb8969e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f3d52ac9-d2dd-4fb9-98f1-f9e53cb8969e.png.2021-07-09_10-14-20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f4388595-61b5-4779-9b7c-87004f0070f8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f4388595-61b5-4779-9b7c-87004f0070f8.png.2021-07-09_03-15-44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f7dd8d92-337e-4475-b383-269cb4777e94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f7dd8d92-337e-4475-b383-269cb4777e94.png.2021-07-09_15-52-24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f7f1dce5-c5ab-4b0b-8d9c-2379e16aee8e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f7f1dce5-c5ab-4b0b-8d9c-2379e16aee8e.png.2021-07-09_14-08-55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f9a1601f-362a-4bf4-a7d8-6970f0779dac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f9a1601f-362a-4bf4-a7d8-6970f0779dac.png.2021-07-09_03-15-28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_fa43a508-9650-433d-a1d9-bd3c87a417d1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_fa43a508-9650-433d-a1d9-bd3c87a417d1.png.2021-07-09_14-15-56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_fa9a8365-e917-4458-8bca-dc85d2ce76fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_fa9a8365-e917-4458-8bca-dc85d2ce76fb.png.2021-07-09_08-37-24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_fbb6512d-da30-4eaa-844a-6b7c077f5912.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_fbb6512d-da30-4eaa-844a-6b7c077f5912.png.2021-07-09_15-27-36.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +297,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CaptchaRecordDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="data-collection" />
       <extension name="coverage">
@@ -200,7 +375,7 @@
       <workItem from="1625710847945" duration="2612000" />
       <workItem from="1625730074301" duration="12745000" />
       <workItem from="1625813973216" duration="25198000" />
-      <workItem from="1625848693454" duration="1826000" />
+      <workItem from="1625848693454" duration="6580000" />
     </task>
     <servers />
   </component>

@@ -22,6 +22,7 @@
 /home/qy/code/data-collection/src/main/java/com/highy/common/validator/group/AliyunGroup.java
 /home/qy/code/data-collection/src/main/java/com/highy/common/interceptor/DataFilterInterceptor.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/oss/dao/SysOssDao.java
+/home/qy/code/data-collection/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/dao/SysParamsDao.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/log/controller/SysLogOperationController.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/oss/cloud/FastDFSCloudStorageService.java
@@ -90,6 +91,7 @@
 /home/qy/code/data-collection/src/main/java/com/highy/common/annotation/LogOperation.java
 /home/qy/code/data-collection/src/main/java/com/highy/common/utils/MessageUtils.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/message/sms/QcloudSmsService.java
+/home/qy/code/data-collection/src/main/java/com/highy/common/config/CorsConfig.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/log/entity/SysLogLoginEntity.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/enums/SuperAdminEnum.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/entity/SysRoleMenuEntity.java
