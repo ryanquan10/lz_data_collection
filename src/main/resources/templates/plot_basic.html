@@ -173,8 +173,8 @@
              });.attr('src',"user.jpg");
           }}); */
 
-		//$("#outputImg").attr("src","http://192.168.233.135ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
-		//$("#imgDownload").attr("href","http://192.168.233.135ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
+		//$("#outputImg").attr("src","http://192.168.233.139ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
+		//$("#imgDownload").attr("href","http://192.168.233.139ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
 		//alert($("#outputImg").attr("src"));
 	});
 
@@ -224,10 +224,10 @@
 					var imageName=imgPath.substring(sindex+1);
 
 					//$("#outputImg").src=imgPath;
-					$("#outputImg").attr("src","http://192.168.233.135"+imgPath);
-					// $("#imgDownload").attr("href","http://192.168.233.135"+imgPath);
+					$("#outputImg").attr("src","http://192.168.233.139"+imgPath);
+					// $("#imgDownload").attr("href","http://192.168.233.139"+imgPath);
 					// $("#imgDownload").attr("download",imgPath);
-					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.135"+imgPath+"', '"+imageName+"')");
+					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.139"+imgPath+"', '"+imageName+"')");
 					$("#outputImgDiv").show();
 				}else{
 					alert("出现异常：" + data.message);
@@ -268,9 +268,9 @@
 					//$("#outputImg").src=imgPath;
 					var sindex =imgPath.lastIndexOf("/");
 					var imageName=imgPath.substring(sindex+1);
-					$("#outputImg").attr("src","http://192.168.233.135"+imgPath);
-					// $("#imgDownload").attr("href","http://192.168.233.135"+imgPath);
-					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.135"+imgPath+"', '"+imageName+"')");
+					$("#outputImg").attr("src","http://192.168.233.139"+imgPath);
+					// $("#imgDownload").attr("href","http://192.168.233.139"+imgPath);
+					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.139"+imgPath+"', '"+imageName+"')");
 					// $("#imgDownload").attr("download",imgPath);
 					$("#outputImgDiv").show();
 				}else{
@@ -287,13 +287,21 @@
 		return false;
 	}
 
+
+	////未登录的时候 jq 不会 告诉你 ,jq在未登录,它会直接发数据,然后直接被拦截,返回一条不对的数据 并返回200  (这条不对的数据 是原本shiro让你redirect的url地址 但 jq处理不了就变成了 错数据)
+	////由于拦截器的原因数据到 downloadimg 之前 就会被拦截器拦截
 	function openDownloadDialog(url,fileName){
+		console.log("execute openDownloadDialog(..)");
+     //先验证一下user又没有登录 ,没有登录,timeout ,则跳转到登录页面
+
+
+
 		window.URL = window.URL || window.webkitURL;
 		if (typeof history.pushState == "function") {
 			var xhr = new XMLHttpRequest();
 			xhr.open(
 					"get",
-					"http://192.168.233.135:8888/dataAnalysis/downloadimg/download?fileName=" + fileName,
+					"http://192.168.233.139:8888/dataAnalysis/downloadimg/download?fileName=" + fileName,
 					true);
 			xhr.responseType = "blob";
 			xhr.onload = function () {
@@ -314,6 +322,61 @@
 			}
 			xhr.send();
 		}
+	}
+
+
+
+    //判断是否登录超时,使用ajax
+	function ajaxPost(url, params, callback) {
+		var result = null;
+		var headers={};
+		headers['CSRFToken']=$("#csrftoken").val();
+
+		$.ajax({
+			type : 'post',
+			async : false,
+			url : url,
+			data : params,
+			dataType : 'json',
+			headers:headers,
+			success : function(data, status) {
+				result = data;
+				if(data&&data.code&&data.code=='101'){
+					modals.error("操作失败，请刷新重试，具体错误："+data.message);
+					return false;
+				}
+				if (callback) {
+					callback.call(this, data, status);
+				}
+			},
+			error : function(err, err1, err2) {
+				console.log("ajaxPost发生异常，请仔细检查请求url是否正确，如下面错误信息中出现success，则表示csrftoken更新，请忽略");
+				console.log(err.responseText);
+				if(err && err.readyState && err.readyState == '4'){
+					var sessionstatus=err.getResponseHeader("session-status");
+					if(sessionstatus=="timeout"){
+						//如果超时就处理 ，指定要跳转的页面
+						window.location.href=basePath+"/" ;
+					}
+					else{//csrf异常
+						var responseBody = err.responseText;
+						if (responseBody) {
+							responseBody = "{'retData':" + responseBody;
+							var resJson = eval('(' + responseBody + ')');
+							$("#csrftoken").val(resJson.csrf.CSRFToken);
+							this.success(resJson.retData, 200);
+						}
+						return;
+					}
+				}
+				modals.error({
+					text : JSON.stringify(err) + '<br/>err1:' + JSON.stringify(err1) + '<br/>err2:' + JSON.stringify(err2),
+					large : true
+				});
+			}
+		});
+
+		return result;
 	}
 
 

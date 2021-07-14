@@ -215,7 +215,6 @@ com/highy/modules/sys/service/SysUserService.class
 com/highy/modules/oss/entity/SysOssEntity.class
 com/highy/modules/sys/enums/SuperAdminEnum.class
 com/highy/common/annotation/DataFilter.class
-com/highy/modules/plot/service/SingleRengine$SingleRengineIn.class
 com/highy/modules/sys/dao/SysRoleMenuDao.class
 com/highy/modules/sys/entity/SysUserEntity.class
 com/highy/common/xss/XssHttpServletRequestWrapper.class

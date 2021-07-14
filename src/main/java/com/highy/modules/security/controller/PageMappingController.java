@@ -27,7 +27,8 @@ public class PageMappingController {
 
 	@RequestMapping(value = {"/", "index.html"})
 	public String index(){
-		return "index";
+//		return "index";
+		return "plot_basic.html";
 	}
 
     @RequestMapping("home.html")

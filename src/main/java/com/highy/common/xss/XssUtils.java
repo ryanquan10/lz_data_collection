@@ -72,6 +72,7 @@ public class XssUtils extends Whitelist {
         StringBuilder html = new StringBuilder();
         html.append("<a href=\"https://www.jchaoy.io\" target=\"_blank\">high哥工作室</a>");
 
+        System.out.println(html.toString());
         System.out.println(filter(html.toString()));
     }
 

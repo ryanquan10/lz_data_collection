@@ -1,8 +1,11 @@
 package com.highy.modules.plot.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 //import org.springframework.stereotype.Controller;
 //import org.springframework.stereotype.Controller;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.apache.commons.lang3.StringUtils;
@@ -18,14 +21,18 @@ import java.nio.file.Paths;
 public class DownloadImageController {
 
 
+
+    @Value("${document.path}")
     static String document = "/home/qy/code/data-collection/";
 //    static String document = "/home/product";
 
     @RequestMapping(value = "/download")
     public byte[] downLoad(@RequestParam("fileName") String fileName) throws IOException {
         if(StringUtils.isBlank(fileName)){
-//          throw new Exception
+           //todo         throw a new Exception
         }
+
+
 
         Path path = Paths.get(document,fileName);
 

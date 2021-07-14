@@ -11,11 +11,13 @@ public class MainController {
 		return "hello";
 	}
 
-	@RequestMapping("/")
-	@ResponseBody
-	String home() {
-		return "Hello World!";
-	}
+//	@RequestMapping("/")
+//	@ResponseBody
+//	String home() {
+//
+////		return "Hello World!";
+//		return "plot_basic";
+//	}
 	
 	@RequestMapping(value={"plotbasic","plot_basic.html"})
 	public String plotbasic() {
