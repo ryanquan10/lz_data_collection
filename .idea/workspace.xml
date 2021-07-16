@@ -5,38 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ff8e4b-09c3-48ca-8552-011440b4aad0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/SingleRengineBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/IRenderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/filter/A1axCheckTimeOutFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-collection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/data-collection.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/common/xss/XssUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/common/xss/XssUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/SingleRengine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/SingleRengineBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/utils/SingleRengineBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/FilterConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OtherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OtherTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/xss/XssUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/xss/XssUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/controller/DataAnalysisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/controller/DataAnalysisController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/service/SingleRengine$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/service/SingleRengine$SingleRengineIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/service/SingleRengine$TextConsole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/service/SingleRengine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/ShiroConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/PageMappingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/PageMappingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/FilterConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/FilterConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PACKAGE_NAME/OtherTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit3 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -160,19 +145,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="/home/qy/code/data-collection" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -263,7 +235,8 @@
       <workItem from="1625813973216" duration="25198000" />
       <workItem from="1625848693454" duration="6580000" />
       <workItem from="1626094969334" duration="17133000" />
-      <workItem from="1626224685549" duration="10979000" />
+      <workItem from="1626224685549" duration="38219000" />
+      <workItem from="1626405180265" duration="3887000" />
     </task>
     <servers />
   </component>
@@ -287,36 +260,55 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java</url>
-          <line>99</line>
+          <line>44</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/SingleRengineBuilder.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/utils/SingleRengineBuilder.java</url>
           <line>94</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java</url>
-          <line>239</line>
+          <line>80</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java</url>
-          <line>221</line>
+          <line>62</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java</url>
-          <line>284</line>
+          <line>125</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java</url>
           <line>24</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java</url>
+          <line>42</line>
+          <properties class="com.highy.modules.plot.controller.DataAnalysisController" method="analysis">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.shiro.web.servlet.ShiroHttpServletRequest" memberName="request" />
+        <PinnedItemInfo parentTag="org.apache.shiro.subject.support.DelegatingSubject$StoppingAwareProxiedSession" memberName="delegate" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

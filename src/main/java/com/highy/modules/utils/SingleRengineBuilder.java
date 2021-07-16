@@ -1,4 +1,4 @@
-package com.highy.modules.plot.service;
+package com.highy.modules.utils;
 
 import java.awt.FileDialog;
 import java.awt.Frame;

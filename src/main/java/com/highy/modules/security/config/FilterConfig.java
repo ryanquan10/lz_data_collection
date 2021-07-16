@@ -9,6 +9,7 @@
 package com.highy.modules.security.config;
 
 import com.highy.common.xss.XssFilter;
+import com.highy.modules.security.filter.A1axCheckTimeOutFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,6 +24,18 @@ import javax.servlet.DispatcherType;
  */
 @Configuration
 public class FilterConfig {
+
+
+    @Bean
+
+    public FilterRegistrationBean AjaxCheckTimeOutFilter(){
+        FilterRegistrationBean registration = new FilterRegistrationBean();
+        registration.setFilter(new A1axCheckTimeOutFilter());
+        registration.addUrlPatterns("/downloadimg/*");
+        registration.setName("ajaxTimeOutFilter");
+        return registration;
+    }
+
 
     @Bean
     public FilterRegistrationBean shiroFilterRegistration() {
@@ -46,4 +59,10 @@ public class FilterConfig {
         registration.setName("xssFilter");
         return registration;
     }
+
+
+    /**
+     * "http://192.168.233.142:8888/dataAnalysis/downloadimg/download?fileName="
+     */
+
 }

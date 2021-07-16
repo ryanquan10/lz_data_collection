@@ -20,6 +20,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -27,6 +28,8 @@ import org.apache.shiro.authc.LockedAccountException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
+import org.apache.shiro.web.util.SavedRequest;
+import org.apache.shiro.web.util.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -122,6 +125,14 @@ public class LoginController {
 			log.setStatus(LoginStatusEnum.SUCCESS.value());
 			log.setCreator(user.getId());
 			log.setCreatorName(user.getUsername());
+
+			// by qy
+
+//			SavedRequest savedRequest = WebUtils.getSavedRequest(request);
+//			String url = savedRequest.getRequestUrl();
+//
+//			result.setMsg(" come back to package where stayed at before loggdding");
+//			result.setData(url);
 		}catch (UnknownAccountException e) {
 			log.setStatus(LoginStatusEnum.FAIL.value());
 			log.setCreatorName(login.getUsername());
@@ -206,5 +217,26 @@ public class LoginController {
 		}
         return new Result();
 	}
+
+
+	@PostMapping("stat")
+	public Result status() {
+		UserDetail user = SecurityUser.getUser();
+
+		try {
+
+			if(user==null){
+				return new Result().error("get stat 失败：please login");
+			}
+
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				return new Result().error("get stat 失败：" + e.getMessage());
+			}
+
+		return new Result();
+	}
+
 	
 }

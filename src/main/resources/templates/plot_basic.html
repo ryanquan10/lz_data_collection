@@ -173,8 +173,8 @@
              });.attr('src',"user.jpg");
           }}); */
 
-		//$("#outputImg").attr("src","http://192.168.233.139ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
-		//$("#imgDownload").attr("href","http://192.168.233.139ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
+		//$("#outputImg").attr("src","http://192.168.233.142ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
+		//$("#imgDownload").attr("href","http://192.168.233.142ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
 		//alert($("#outputImg").attr("src"));
 	});
 
@@ -224,10 +224,10 @@
 					var imageName=imgPath.substring(sindex+1);
 
 					//$("#outputImg").src=imgPath;
-					$("#outputImg").attr("src","http://192.168.233.139"+imgPath);
-					// $("#imgDownload").attr("href","http://192.168.233.139"+imgPath);
+					$("#outputImg").attr("src","http://192.168.233.142"+imgPath);
+					// $("#imgDownload").attr("href","http://192.168.233.142"+imgPath);
 					// $("#imgDownload").attr("download",imgPath);
-					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.139"+imgPath+"', '"+imageName+"')");
+					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.142"+imgPath+"', '"+imageName+"')");
 					$("#outputImgDiv").show();
 				}else{
 					alert("出现异常：" + data.message);
@@ -268,9 +268,9 @@
 					//$("#outputImg").src=imgPath;
 					var sindex =imgPath.lastIndexOf("/");
 					var imageName=imgPath.substring(sindex+1);
-					$("#outputImg").attr("src","http://192.168.233.139"+imgPath);
-					// $("#imgDownload").attr("href","http://192.168.233.139"+imgPath);
-					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.139"+imgPath+"', '"+imageName+"')");
+					$("#outputImg").attr("src","http://192.168.233.142"+imgPath);
+					// $("#imgDownload").attr("href","http://192.168.233.142"+imgPath);
+					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.142"+imgPath+"', '"+imageName+"')");
 					// $("#imgDownload").attr("download",imgPath);
 					$("#outputImgDiv").show();
 				}else{
@@ -294,6 +294,13 @@
 		console.log("execute openDownloadDialog(..)");
      //先验证一下user又没有登录 ,没有登录,timeout ,则跳转到登录页面
 
+		var result=ajaxPost(url);
+
+		if(result&&result.code!=0){
+			alert("下载请先登录");
+			return false;
+		}
+
 
 
 		window.URL = window.URL || window.webkitURL;
@@ -301,7 +308,7 @@
 			var xhr = new XMLHttpRequest();
 			xhr.open(
 					"get",
-					"http://192.168.233.139:8888/dataAnalysis/downloadimg/download?fileName=" + fileName,
+					"http://192.168.233.142:8888/dataAnalysis/downloadimg/download?fileName=" + fileName,
 					true);
 			xhr.responseType = "blob";
 			xhr.onload = function () {
@@ -326,55 +333,59 @@
 
 
 
-    //判断是否登录超时,使用ajax
+    //判断是否登录超时,使用ajax   ,kua yu wen ti
 	function ajaxPost(url, params, callback) {
-		var result = null;
-		var headers={};
-		headers['CSRFToken']=$("#csrftoken").val();
+
+
+
+		console.log("ajaxPost(url = "+url)
+
+		var result={};
+
 
 		$.ajax({
 			type : 'post',
 			async : false,
-			url : url,
+			url : "http://192.168.233.142:8888/dataAnalysis/stat",  //url,
 			data : params,
 			dataType : 'json',
-			headers:headers,
-			success : function(data, status) {
-				result = data;
-				if(data&&data.code&&data.code=='101'){
-					modals.error("操作失败，请刷新重试，具体错误："+data.message);
-					return false;
+			// headers:headers,
+			success : function(data, status,xhr) {
+
+				if(data&&data.code==0){
+					console.log("success : function(data, status)")
+					result=data;
+					console.log(result)
 				}
+
 				if (callback) {
 					callback.call(this, data, status);
 				}
 			},
-			error : function(err, err1, err2) {
-				console.log("ajaxPost发生异常，请仔细检查请求url是否正确，如下面错误信息中出现success，则表示csrftoken更新，请忽略");
-				console.log(err.responseText);
-				if(err && err.readyState && err.readyState == '4'){
-					var sessionstatus=err.getResponseHeader("session-status");
+			error : function(xhr, textStus, errorThrown) {
+
+				// console.log("ajaxPost发生异常，请仔细检查请求url是否正确，如下面错误信息中出现success，则表示csrftoken更新，请忽略");
+
+				if(xhr && xhr.readyState && xhr.readyState == '4'){
+					var sessionstatus=xhr.getResponseHeader("session-status");
+					console.log("sessionstatus=  "+sessionstatus);
 					if(sessionstatus=="timeout"){
 						//如果超时就处理 ，指定要跳转的页面
-						window.location.href=basePath+"/" ;
+						console.log("如果超时就处理 ，指定要跳转的页面")
+						window.location.href="http://192.168.233.142:8888/dataAnalysis/login.html" //basePath+"/" ;     //
 					}
-					else{//csrf异常
-						var responseBody = err.responseText;
-						if (responseBody) {
-							responseBody = "{'retData':" + responseBody;
-							var resJson = eval('(' + responseBody + ')');
-							$("#csrftoken").val(resJson.csrf.CSRFToken);
-							this.success(resJson.retData, 200);
-						}
-						return;
+
+					if(sessionstatus==null){
+						//如果超时就处理 ，指定要跳转的页面
+						console.log("如果超时就处理 ，指定要跳转的页面")
+						window.location.href="http://192.168.233.142:8888/dataAnalysis/login.html" //basePath+"/" ;     //
 					}
 				}
-				modals.error({
-					text : JSON.stringify(err) + '<br/>err1:' + JSON.stringify(err1) + '<br/>err2:' + JSON.stringify(err2),
-					large : true
-				});
 			}
 		});
+
+
+
 
 		return result;
 	}
@@ -406,12 +417,12 @@
 			<B>可选输入：</B><BR> 图边距（图长宽比例不协调，或者文字被截断情况下使用<BR>
 			右必需大于左；上必需大于下）:<BR>左：<INPUT name="left_margin"
 										id="id_left_margin" type="number" min="0" max="1" step="any"
-										value="0.1">，右：<INPUT name="right_margin"
+										value="0.1">，
+			                            右：<INPUT name="right_margin"
 															  id="id_right_margin" type="number" min="0" max="1" step="any"
-															  value="0.9"><BR>下：<INPUT name="bottom_margin"
-																					   id="id_bottom_margin" type="number" min="0" max="1" step="any"
-																					   value="0.1">，上：<INPUT name="top_margin" id="id_top_margin"
-																											 type="number" min="0" max="1" step="any" value="0.9"><BR>字体大小：百分比
+															  value="0.9"><BR>
+			                            下：<INPUT name="bottom_margin" id="id_bottom_margin" type="number" min="0" max="1" step="any" value="0.1">
+			                          ，上：<INPUT name="top_margin" id="id_top_margin" type="number" min="0" max="1" step="any" value="0.9"><BR>字体大小：百分比
 			<INPUT name="basic_pie_plot_percent_size"
 				   id="id_basic_pie_plot_percent_size" type="number" step="any"
 				   value="12">，分类：<INPUT name="basic_pie_plot_label_size"

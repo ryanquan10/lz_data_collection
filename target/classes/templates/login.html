@@ -91,7 +91,10 @@ function loginSubmit(){
   	          	getVerifiCode();
   	            return false;
   	        }else{// 登录成功进入主业
-  	        	window.location.href = 'plot_basic.html';
+  	            if(data.data){
+                    window.location.href =data.data;
+                }
+  	        	window.location.href ='plot_basic.html';
   	        }
   	    } 
     });
