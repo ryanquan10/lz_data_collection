@@ -195,6 +195,13 @@
 		formData.append("files", $("#filePath")[0].files[0]);
 		formData.append("plotType", $("#plotType").val());
 		formData.append("filePath", $("#filePath").val());
+
+		formData.append("left_color",$("#id_left_color").val());
+		formData.append("right_color",$("#id_right_color").val());
+		formData.append("basic_pie_plot_percent_size",$("#id_basic_pie_plot_percent_size").val());
+		formData.append("font_style",$("#id_font_style").val());
+
+
 		$.ajax({
 			type: 'post',
 			//data: {plotType:plotType,filePath:filePath},
@@ -414,20 +421,36 @@
 				   data-show-caption="true" data-show-remove="false" data-show-upload="false" data-allowed-file-extensions='["csv","xlsx","txt","xls"]'>
 			<button type="button" class="btn btn-default" onclick="fileDataAnalysis()">分析</button>
 			<BR><BR>
-			<B>可选输入：</B><BR> 图边距（图长宽比例不协调，或者文字被截断情况下使用<BR>
-			右必需大于左；上必需大于下）:<BR>左：<INPUT name="left_margin"
-										id="id_left_margin" type="number" min="0" max="1" step="any"
-										value="0.1">，
-			                            右：<INPUT name="right_margin"
-															  id="id_right_margin" type="number" min="0" max="1" step="any"
-															  value="0.9"><BR>
-			                            下：<INPUT name="bottom_margin" id="id_bottom_margin" type="number" min="0" max="1" step="any" value="0.1">
-			                          ，上：<INPUT name="top_margin" id="id_top_margin" type="number" min="0" max="1" step="any" value="0.9"><BR>字体大小：百分比
-			<INPUT name="basic_pie_plot_percent_size"
-				   id="id_basic_pie_plot_percent_size" type="number" step="any"
-				   value="12">，分类：<INPUT name="basic_pie_plot_label_size"
-										 id="id_basic_pie_plot_label_size" type="number" step="any"
-										 value="12">
+			<B>可选输入：</B><BR> 图颜色（图长宽比例不协调，或者文字被截断情况下使用<BR>
+			右必需大于左；上必需大于下）:<BR>
+
+
+
+			<div class="input-box">
+				<table >
+					<tr>
+						<th> 左：</th><th><INPUT name="left_color" id="id_left_color" type="color" min="0" max="1" step="any" value="0.1"></th>
+					</tr>
+					<tr>
+						<th> 右：</th><th> <INPUT name="right_color" id="id_right_color" type="color" min="0" max="1" step="any" value="0.9"><BR></th>
+					</tr>
+					<tr>
+						<th> 字体大小：百分比：</th><th><INPUT name="basic_pie_plot_percent_size" id="id_basic_pie_plot_percent_size" type="number" step="any" value="12"></th>
+					</tr>
+					<tr>
+						<th> 字体样式：</th>
+						<th>
+							<select name="font_style"  id="#id_font_style">
+								<option>bold</option>
+								<option>plain</option>
+							</select>
+						</th>
+					</tr>
+
+				</table>
+
+
+			</div>
 			<!-- <BR>请选择颜色1（color1）： <INPUT
                 name="basic_pie_plot_color1"
                 class="colorfield_field jscolor {required:false}"

@@ -23,8 +23,8 @@ public class DownloadImageController {
 
 
     @Value("${document.path}")
-    static String document = "/home/qy/code/data-collection/";
-//    static String document = "/home/product";
+    static String document = "/home/qy/code/data-collection/"; //本地测试
+//    static String document = "/home/product";  //阿里云部署
 
     @RequestMapping(value = "/download")
     public byte[] downLoad(@RequestParam("fileName") String fileName) throws IOException {

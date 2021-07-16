@@ -5,22 +5,101 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ff8e4b-09c3-48ca-8552-011440b4aad0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/IRenderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/filter/A1axCheckTimeOutFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/SingleRengineBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/utils/SingleRengineBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/FilterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/IRenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/IRenderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modules/plot/plotbasic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/modules/plot/plotbasic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/controller/DataAnalysisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/plot/controller/DataAnalysisController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/FilterConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/FilterConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_066f145f-268f-405b-a0b7-ac1bd82f8a30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_08500dc8-9160-4fab-9108-1321306b0cdb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_0f5a63c0-819a-4b61-a210-60b6c2a83cbf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_15683cf2-1e74-4595-9d77-8ed1df2d0bdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_237dc678-3750-4bb5-b424-5d8e973a9462.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_24fb960f-492e-4266-8485-2ad7b699917d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_27418c40-bb43-46d2-bbee-354d69cbce9f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_274e7f9b-4010-4b25-af52-ff704cae6f77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_306e3324-5ffc-43fb-ac0e-0c9160bea5c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_30d36db1-4ad0-40c8-8652-cdccf0cdc100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_357cd338-c550-4d20-b252-1a3bb53d12fd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_357cd338-c550-4d20-b252-1a3bb53d12fd.png.2021-07-10_02-44-46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_3693ec47-5b2c-42f4-afd3-0103f0e95c4e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_3bd1d3b3-d4e9-49be-aaa9-137e93f1580b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_3c86e0c9-1e11-47a0-85d2-ebc507f96e21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_3cc9f8f6-a068-462d-bcc6-ef77f52ba565.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_486fc088-3215-4b86-99fb-e39f511786f8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_48a9097f-1d49-4644-9994-517a4bd5330e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_4ab652c1-3d0a-4295-abd2-b5b08f7619f6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_51d7d3a1-7b86-4438-8ff7-6c6fcb31ed58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_53969a31-e6fe-4b44-9931-38dee7311071.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_59d9969a-e0bd-42b6-95d6-7d8e3701d6a6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_5c6cd006-4306-419f-96dd-3128c49d248c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_5e919cf5-9f03-42f6-88f0-6b966e7afe43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_60089f9e-8721-4e34-bba0-30ca28da44b8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_66a0ffd6-d6f1-4702-9189-45e27e44fdb9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_6a1781bf-97ff-4896-a073-8ca4b695fd7b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_6abf9ae0-b0e7-40eb-a267-73b87ad5c497.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_6bcb8b9c-aea4-4b6d-a24e-7b8b4638b3f2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_78667b42-0b76-47ab-8ff8-c27e6ea7bc66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_7ba64212-9e45-451a-b9ba-401ea8a661da.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_892d2d78-4896-4c32-acac-2bb7c5ac1d7c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_89b26837-8fe4-48db-a402-0caacde7f41f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_8a1fa598-5471-46c8-9925-88b833ca4ebf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_8a7c0983-9515-4932-9fb0-f672cd367e9b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_8b8db0a1-7721-4b17-9e19-8c6449019521.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_912a0942-f3e5-49db-a55a-4884ad99019c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_94f3eb21-ca82-43f4-b36a-32fbdec21f93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9651288b-cbcc-4ba9-96fd-0e0679e3fb75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_96edd262-c5bb-4739-bf2a-3d485e9ede42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_96edd262-c5bb-4739-bf2a-3d485e9ede42.png.2021-07-10_02-55-27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9723b85b-1ec8-4e7f-bba5-4b628657055d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9cf61358-de40-4912-a95c-a03d0e2131a7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_9d47a7ab-ea83-42ed-91ee-26fcd166c227.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a01d1e4e-1e38-4297-a5b0-cb0913965c47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a0c1e7e1-a48c-4e46-a6ce-42819001f051.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a12b51d5-8690-46ed-a617-d39cbf7e234e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a12b51d5-8690-46ed-a617-d39cbf7e234e.png.2021-07-10_02-59-25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a5090b9d-b048-4fa4-a9c6-fbd8ec0acd20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a6f4304c-e81d-44c6-ba46-53fdae4f184f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_a77f2e7b-fbca-46c2-9167-25fb00d7a345.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_aefe7180-a8c6-4579-a1a8-a132882648c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_af87a2dc-70d7-47bd-ab78-ba2f5f2c75e3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_af87a2dc-70d7-47bd-ab78-ba2f5f2c75e3.png.2021-07-10_02-57-37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_b9184344-24e4-47eb-ac8c-605d05894b39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_ba47231e-ed3d-4eba-b66b-faba70180cde.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_bf6fcb3c-563d-4b68-a13f-f87fe5fae2d0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_bf6fcb3c-563d-4b68-a13f-f87fe5fae2d0.png.2021-07-10_02-47-47.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c135aed9-e4f4-49d1-a04a-921d8fe313c5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c3c269cd-acf7-4438-ae8a-11f8437472e1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c56c3d44-7e6a-41e0-b12c-8628b0ef2918.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c64d459c-486f-4f64-908d-f82853d686a3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_c6a4075d-bb49-470a-afee-8aaa3011bdd1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_d06be0e3-f438-4496-88ce-e97d4f586a22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_d3d0c178-8700-4aa8-83c9-cfe12ee2d335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_d8a7f67d-4881-49a3-89fb-47084f0071db.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_d95c63a0-e8ce-41ab-be2c-b066242985d1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_da32a0bf-5fc3-42e6-9b76-17f6f4bfd539.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_db6d9c78-e0c1-4e32-8533-4fbabf1c88e2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_dc2a4864-86c8-4672-977c-3cef904121a7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_e035ccdc-9765-4e2a-9714-3d1bcfc5db7e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_eca8070b-776d-4e2c-af05-c365b2a1d88e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_ed026481-f934-4eb3-b5a0-5d1517ae6b32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f2ad6f8f-1078-434f-8d9f-4573f0976053.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f63fa6b7-96e7-44da-9ee5-4d05637fa79f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_fa774f6e-c722-49a8-ba2c-7fff62138dba.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_fb197534-71e9-40ba-b9ef-0fa17cf3bbfc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venn2021-07-13-03-23-0252598.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venn2021-07-16-03-09-3246038.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +315,8 @@
       <workItem from="1625848693454" duration="6580000" />
       <workItem from="1626094969334" duration="17133000" />
       <workItem from="1626224685549" duration="38219000" />
-      <workItem from="1626405180265" duration="3887000" />
+      <workItem from="1626405180265" duration="18870000" />
+      <workItem from="1626442892184" duration="620000" />
     </task>
     <servers />
   </component>
@@ -269,21 +349,6 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java</url>
-          <line>125</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java</url>
           <line>24</line>
           <option name="timeStamp" value="31" />
@@ -293,13 +358,15 @@
           <line>99</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DataAnalysisController.java</url>
-          <line>42</line>
-          <properties class="com.highy.modules.plot.controller.DataAnalysisController" method="analysis">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="34" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java</url>
+          <line>210</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
