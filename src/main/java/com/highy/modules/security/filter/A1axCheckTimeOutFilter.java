@@ -9,7 +9,7 @@ import java.io.IOException;
 //ajax不能应对Filter,所以  用一个Filter 来对应 专用的 ajax 请求
 //参考 https://blog.csdn.net/yb546822612/article/details/102950981
 
-//"http://192.168.233.142:8888/dataAnalysis/downloadimg/download?fileName="
+//"http://8.129.59.18:8888/dataAnalysis/downloadimg/download?fileName="
 
 public class A1axCheckTimeOutFilter implements Filter {
     @Override

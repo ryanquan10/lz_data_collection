@@ -173,8 +173,8 @@
              });.attr('src',"user.jpg");
           }}); */
 
-		//$("#outputImg").attr("src","http://192.168.233.142ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
-		//$("#imgDownload").attr("href","http://192.168.233.142ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
+		//$("#outputImg").attr("src","http://192.168.233.143ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
+		//$("#imgDownload").attr("href","http://192.168.233.143ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
 		//alert($("#outputImg").attr("src"));
 	});
 
@@ -200,6 +200,11 @@
 		formData.append("right_color",$("#id_right_color").val());
 		formData.append("basic_pie_plot_percent_size",$("#id_basic_pie_plot_percent_size").val());
 		formData.append("font_style",$("#id_font_style").val());
+
+		formData.append("main_title",$("#id_main_title").val());
+		formData.append("main_cex",$("#id_main_cex").val());
+		formData.append("main_color",$("#id_main_color").val());
+		formData.append("main_font_style",$("#id_main_font_style").val());
 
 
 		$.ajax({
@@ -231,10 +236,10 @@
 					var imageName=imgPath.substring(sindex+1);
 
 					//$("#outputImg").src=imgPath;
-					$("#outputImg").attr("src","http://192.168.233.142"+imgPath);
-					// $("#imgDownload").attr("href","http://192.168.233.142"+imgPath);
+					$("#outputImg").attr("src","http://192.168.233.143"+imgPath);
+					// $("#imgDownload").attr("href","http://192.168.233.143"+imgPath);
 					// $("#imgDownload").attr("download",imgPath);
-					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.142"+imgPath+"', '"+imageName+"')");
+					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.143"+imgPath+"', '"+imageName+"')");
 					$("#outputImgDiv").show();
 				}else{
 					alert("出现异常：" + data.message);
@@ -275,9 +280,9 @@
 					//$("#outputImg").src=imgPath;
 					var sindex =imgPath.lastIndexOf("/");
 					var imageName=imgPath.substring(sindex+1);
-					$("#outputImg").attr("src","http://192.168.233.142"+imgPath);
-					// $("#imgDownload").attr("href","http://192.168.233.142"+imgPath);
-					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.142"+imgPath+"', '"+imageName+"')");
+					$("#outputImg").attr("src","http://192.168.233.143"+imgPath);
+					// $("#imgDownload").attr("href","http://192.168.233.143"+imgPath);
+					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.143"+imgPath+"', '"+imageName+"')");
 					// $("#imgDownload").attr("download",imgPath);
 					$("#outputImgDiv").show();
 				}else{
@@ -315,7 +320,7 @@
 			var xhr = new XMLHttpRequest();
 			xhr.open(
 					"get",
-					"http://192.168.233.142:8888/dataAnalysis/downloadimg/download?fileName=" + fileName,
+					"http://192.168.233.143:8888/dataAnalysis/downloadimg/download?fileName=" + fileName,
 					true);
 			xhr.responseType = "blob";
 			xhr.onload = function () {
@@ -353,7 +358,7 @@
 		$.ajax({
 			type : 'post',
 			async : false,
-			url : "http://192.168.233.142:8888/dataAnalysis/stat",  //url,
+			url : "http://192.168.233.143:8888/dataAnalysis/stat",  //url,
 			data : params,
 			dataType : 'json',
 			// headers:headers,
@@ -379,13 +384,13 @@
 					if(sessionstatus=="timeout"){
 						//如果超时就处理 ，指定要跳转的页面
 						console.log("如果超时就处理 ，指定要跳转的页面")
-						window.location.href="http://192.168.233.142:8888/dataAnalysis/login.html" //basePath+"/" ;     //
+						window.location.href="http://192.168.233.143:8888/dataAnalysis/login.html" //basePath+"/" ;     //
 					}
 
 					if(sessionstatus==null){
 						//如果超时就处理 ，指定要跳转的页面
 						console.log("如果超时就处理 ，指定要跳转的页面")
-						window.location.href="http://192.168.233.142:8888/dataAnalysis/login.html" //basePath+"/" ;     //
+						window.location.href="http://192.168.233.143:8888/dataAnalysis/login.html" //basePath+"/" ;     //
 					}
 				}
 			}
@@ -429,18 +434,37 @@
 			<div class="input-box">
 				<table >
 					<tr>
-						<th> 左：</th><th><INPUT name="left_color" id="id_left_color" type="color" min="0" max="1" step="any" value="0.1"></th>
+						<th> 左：</th><th><INPUT name="left_color" id="id_left_color" value="#f2f2f2" type="color" min="0" max="1" step="any" value="0.1"></th>
 					</tr>
 					<tr>
-						<th> 右：</th><th> <INPUT name="right_color" id="id_right_color" type="color" min="0" max="1" step="any" value="0.9"><BR></th>
+						<th> 右：</th><th> <INPUT name="right_color" id="id_right_color" value="#FF8040" type="color" min="0" max="1" step="any" value="0.9"><BR></th>
 					</tr>
 					<tr>
-						<th> 字体大小：百分比：</th><th><INPUT name="basic_pie_plot_percent_size" id="id_basic_pie_plot_percent_size" type="number" step="any" value="12"></th>
+						<th> 字体大小：百分比：</th><th><INPUT name="basic_pie_plot_percent_size" id="id_basic_pie_plot_percent_size" type="number" step="any" value="100"></th>
+					</tr>
+
+					<tr>
+						<th> 标题内容：</th><th><INPUT name="main_title" id="id_main_title" type="text" step="any" value=" "></th>
+					</tr>
+					<tr>
+						<th> 标题字体大小：百分比：</th><th><INPUT name="main_cex" id="id_main_cex" type="number" step="any" value="100"></th>
+					</tr>
+					<tr>
+						<th> 标题字体颜色：</th><th><INPUT name="main_color" id="id_main_color" type="color" step="any"></th>
 					</tr>
 					<tr>
 						<th> 字体样式：</th>
 						<th>
-							<select name="font_style"  id="#id_font_style">
+							<select name="font_style"  id="id_font_style">
+								<option>bold</option>
+								<option>plain</option>
+							</select>
+						</th>
+					</tr>
+					<tr>
+						<th> 标题字体样式：</th>
+						<th>
+							<select name="main_font_style"  id="id_main_font_style">
 								<option>bold</option>
 								<option>plain</option>
 							</select>

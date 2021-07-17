@@ -68,11 +68,14 @@ public class VennRenderService implements IRenderService {
                         //图颜色 字体大小  字体间距  字体风格
 
 
-
                         engine.assign("left_color", request.getParameter("left_color"));
                         engine.assign("right_color", request.getParameter("right_color"));
                         engine.assign("font_style",request.getParameter("font_style"));
                         engine.assign("basic_pie_plot_percent_size", new int[]{(Integer.parseInt(request.getParameter("basic_pie_plot_percent_size")) / 100)});
+                        engine.assign("main_cex", new int[]{Integer.parseInt(request.getParameter("main_cex"))/100});
+                        engine.assign("main_color", request.getParameter("main_color"));
+                        engine.assign("main_title", request.getParameter("main_title")==null?"未指定":request.getParameter("main_title"));
+                        engine.assign("main_font_style", request.getParameter("main_font_style"));
 
 
 
@@ -261,6 +264,10 @@ public class VennRenderService implements IRenderService {
                         engine.assign("right_color", request.getParameter("right_color"));
                         engine.assign("font_style",request.getParameter("font_style"));
                         engine.assign("basic_pie_plot_percent_size", new int[]{(Integer.parseInt(request.getParameter("basic_pie_plot_percent_size")) / 100)});
+                        engine.assign("main_cex", new int[]{Integer.parseInt(request.getParameter("main_cex"))/100});
+                        engine.assign("main_color", request.getParameter("main_color"));
+                        engine.assign("main_title", request.getParameter("main_title"));
+                        engine.assign("main_font_style", request.getParameter("main_font_style"));
 
 
 

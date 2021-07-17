@@ -62,7 +62,7 @@ public class FilterConfig {
 
 
     /**
-     * "http://192.168.233.142:8888/dataAnalysis/downloadimg/download?fileName="
+     * "http://8.129.59.18:8888/dataAnalysis/downloadimg/download?fileName="
      */
 
 }
