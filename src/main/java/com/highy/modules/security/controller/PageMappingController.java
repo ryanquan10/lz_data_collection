@@ -40,7 +40,11 @@ public class PageMappingController {
 	public String login(){
 		return "login";
 	}
-	
+
+	@RequestMapping({"/forget/getbackpwd.html"})
+	public String getbackpwd(){ return "getbackpwd"; }
+
+
 	@RequestMapping({"toregister","register.html"})
 	public String toregister(){
 		return "register";
@@ -50,5 +54,7 @@ public class PageMappingController {
 	public String bmlogin(){
 		return "bmlogin";
 	}
+
+
 	
 }

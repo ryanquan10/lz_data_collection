@@ -5,16 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ff8e4b-09c3-48ca-8552-011440b4aad0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/statics/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/statics/js/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/getbackpwd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/FilterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/filter/A1axCheckTimeOutFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/filter/A1axCheckTimeOutFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/modules/plot/plotbasic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/modules/plot/plotbasic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/PageMappingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/PageMappingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_0686ae84-78e7-4f6e-859b-195f289f27e4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_23ba6ce8-e10a-40a8-9e14-80874c5efcbb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_6f9531f7-092e-4eff-8d90-2827268a5395.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_738d92a8-301b-4500-8ab5-46eed31d1f0f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_7418c258-35b9-4bfa-8fba-90db841fa008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_8dccd52e-5e5a-4b89-b0fb-5592e8b53691.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_d0368723-31f2-4a27-9efd-faec42331821.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_d7f15de3-3596-438e-8719-8d403f4b643c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_eb0be328-8f6f-40e4-b0c0-d1b97a69db3c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ven_f63de19d-abc7-4a27-a7b7-b0524cb60a20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venn2021-07-17-07-19-0383870.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venn2021-07-17-07-19-1774181.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +43,7 @@
         <option value="JUnit3 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -67,6 +81,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -79,7 +94,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/statics/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/statics/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -96,6 +111,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/statics/js" />
       <recent name="$PROJECT_DIR$/src/main/resources/statics/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\project\data-collection\src\main\resources\libs" />
@@ -244,7 +260,7 @@
       <workItem from="1626094969334" duration="17133000" />
       <workItem from="1626224685549" duration="38219000" />
       <workItem from="1626405180265" duration="18870000" />
-      <workItem from="1626442892184" duration="17701000" />
+      <workItem from="1626442892184" duration="28760000" />
     </task>
     <servers />
   </component>
@@ -296,7 +312,7 @@
           <line>70</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java</url>
           <line>263</line>
           <option name="timeStamp" value="40" />

@@ -141,16 +141,17 @@ function loginSubmit(){
 
             <div class="button">
                 <button type="button" class="login-btn register-btn" id="button" onclick="loginSubmit()">登录</button>
+<!--                <a href="${request.contextPath}getbackpwd.html"> 忘记密码?(找回密码) </a>-->
             </div>
 
         </form>
 
-		<!-- <div class="remember clearfix">
+		<div class="remember clearfix">
 			<label class="remember-me"><span class="icon"><span class="zt"></span></span><input name="remember-me" class="remember-mecheck" id="remember-me" type="checkbox" checked="">记住我</label>
 			<label class="forgot-password">
-				<a href="/forget/">忘记密码？</a>
+				<a href="${request.contextPath}/forget/getbackpwd.html">忘记密码？</a>
 			</label>
-		</div> -->
+		</div>
 	</div>
 </div>
 
