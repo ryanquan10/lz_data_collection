@@ -160,6 +160,16 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
 		baseDao.updatePassword(id, newPassword);
 	}
 
+
+	@Override
+	@Transactional(rollbackFor = Exception.class)
+	public void updatePasswordByEmail(String email, String newPassword) {
+		newPassword = PasswordUtils.encode(newPassword);
+
+		baseDao.updatePasswordByEmail(email, newPassword);
+	}
+
+
 	@Override
 	public int getCountByDeptId(Long deptId) {
 		return baseDao.getCountByDeptId(deptId);

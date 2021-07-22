@@ -32,6 +32,8 @@ public interface SysUserDao extends BaseDao<SysUserEntity> {
 
 	int updatePassword(@Param("id") Long id, @Param("newPassword") String newPassword);
 
+	int updatePasswordByEmail(@Param("email")String email,@Param("newPassword")String newPassword);
+
 	/**
 	 * 根据部门ID，查询用户数
 	 */

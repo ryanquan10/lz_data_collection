@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>login-register</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <META name="content-type" content="text/html; charset=UTF-8">
+
+
+
+    <LINK href="${request.contextPath}/statics/css/register-login.css" rel="stylesheet">
+    <SCRIPT src="${request.contextPath}/statics/bootstrap-3.3.7/static/js/jquery-3.5.1.min.js"></SCRIPT>
+    <script src="${request.contextPath}/statics/js/particles.js"></script>
+    <SCRIPT src="${request.contextPath}/statics/js/mycommon.js"></SCRIPT>
+    <script>
+        $(function(){
+            getVerifiCode();
+        });
+        //获取验证码     .....
+        function getVerifiCode() {
+            $("#captchaImg").prop('src','${request.contextPath}/captcha?t=' + new Date().getTime());
+        }
+
+        // alert("fake")
+
+        $(function(){
+            $('#id_captcha_1').attr('placeholder', '请输入验证码');
+
+
+            $("#id_captcha_1").on('input',function () {
+
+
+                var t=setTimeout("checkCaptcha()",3000)
+
+
+            });
+
+        });
+
+
+
+
+        function checkCaptcha(){
+            console.log("exec checkCaptcha()")
+
+            //if (!$("#loginForm").valid()) return;
+            var reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$"); //正则表达式
+            //
+            var email=$("#id_email").val();
+
+            if(!reg.test(email)){ //正则验证不通过，格式不对
+                $('#jsLoginTips').empty();
+                ui = '<ul><li>email格式不对</li></ul>';
+                $('#jsLoginTips').append(ui);
+                return false;
+            }
+
+            if (document.getElementById("id_captcha_1").value == ''){
+                $('#jsLoginTips').empty();
+                ui = '<ul><li>验证码不能为空</li></ul>';
+                $('#jsLoginTips').append(ui);
+                return false;
+            }
+
+            if(document.getElementById("id_captcha_1").value.length <5){
+                return false;
+            }
+
+
+            console.log($("#verifyCodeForm").serializeObject());
+            console.log(typeof JSON.stringify($("#verifyCodeForm").serializeObject()));
+            console.log(JSON.stringify($("#verifyCodeForm").serializeObject()));
+            console.log("${request.contextPath}/forget/checkVerfyCode");
+
+
+
+            //var formData = $("#loginForm").serialize();
+            //alert(JSON.stringify($("#loginForm").serializeObject()));
+
+            //JSON.stringify(getFormData($("#dataForm"))),//formData,
+            $.ajax({
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                contentType: 'application/json; charset=UTF-8',
+                data: $("#verifyCodeForm").serialize(),
+                // url:'${request.contextPath}/forget//forget/login',
+                url:'${request.contextPath}/forget/checkVerfyCode',
+                async:true,//true为异步，false为同步
+                error: function (xhr,textStatus,errorThrown) {
+                    //console.log(output);
+                    console.log("There was an error processing this page.  textStatus "+textStatus+"   errorThrown "+errorThrown);
+                    return false;
+                },
+                success:function(data){//alert("返回结果："+ data);
+                    //请求成功时
+                    console.log(" success function"+data);
+                    if(data.code !== 0){
+                        //alert("登录出错：" + data.msg);
+                        $('#jsLoginTips').empty();
+                        var ui = '<ul><li>'+data.msg+'</li></ul>';
+                        $('#jsLoginTips').append(ui);
+                        getVerifiCode();
+                        return false;
+                    }else{
+                        // 校验成功 进入下一步邮箱方式校验
+                        window.location.href ='/dataAnalysis/forget/verify_code_confirme.html';
+                    }
+                }
+            });
+            //return false;
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+<div id="box"><canvas class="particles-js-canvas-el" width="2103" height="970" style="width: 100%; height: 100%;"></canvas></div>
+<div class="cent-box">
+    <!--    <div class="cent-box-header">-->
+    <!--        <h1 class="main-title hide">微生信</h1>-->
+    <!--    </div>-->
+
+
+    <!--                action="http://www.bioinformatics.com.cn/forget/"-->
+
+    <div class="cont-main clearfix">
+        <form id="verifyCodeForm"
+
+              method="post"
+              autocomplete="off">
+            <input type="hidden" name="csrfmiddlewaretoken" value="3c75ab66-fee0-4900-8237-8458ea7225e3">
+
+            <div class="login form">
+                <div class="group">
+                    <div class="group-ipt email">
+                        <input type="text" name="email" id="id_email" class="ipt" placeholder="邮箱地址" value="" required="">
+                    </div>
+                    <div class="group-ipt verify">
+
+<!--                        autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"-->
+                        <input  id="id_captcha_1" name="captcha_1" type="text" placeholder="请输入验证码">
+
+                        <!--                        <img src="${request.contextPath}/forget//forget/statics/js/saved_resource" alt="captcha" class="captcha"> <input id="id_captcha_0" name="captcha_0" type="hidden" value="824c9b207aae1c027150236ab17558388e031f23">-->
+                        <img id="captchaImg" class="captcha" onclick="getVerifiCode();" alt="captcha" src="">
+
+                    </div>
+                    <div class="login-form-tips" id="jsLoginTips"></div>
+                </div>
+            </div>
+
+<!--            <div class="button">-->
+<!--                <button type="submit" class="login-btn register-btn" id="button">发送验证码</button>-->
+<!--            </div>-->
+
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

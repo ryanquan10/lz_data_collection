@@ -34,6 +34,10 @@
 		update sys_user set password = #{newPassword} where id = #{id}
 	</update>
 
+	<update id="updatePasswordByEmail">
+		update sys_user set password = #{newPassword} where email = #{email}
+	</update>
+
 	<select id="getCountByDeptId" resultType="int">
 		select count(*) from sys_user where dept_id = #{value}
 	</select>

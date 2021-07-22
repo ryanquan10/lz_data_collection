@@ -11,6 +11,8 @@ package com.highy.modules.security.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 /**
  * 页面映射
@@ -41,8 +43,19 @@ public class PageMappingController {
 		return "login";
 	}
 
-	@RequestMapping({"/forget/getbackpwd.html"})
-	public String getbackpwd(){ return "getbackpwd"; }
+	@RequestMapping({"/forget/{url}.html"})
+	public String getbackpwd(
+			@PathVariable("url") String url,
+			@RequestParam(required = false,name="email")String email,
+			RedirectAttributes attribdatautes
+	){
+//		attribdatautes.addAttribute("email",email);
+		System.out.println("/forget/"+url);
+
+		return "/forget/"+url;
+	}
+
+
 
 
 	@RequestMapping({"toregister","register.html"})

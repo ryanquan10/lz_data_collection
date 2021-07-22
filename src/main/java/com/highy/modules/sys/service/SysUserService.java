@@ -45,6 +45,9 @@ public interface SysUserService extends BaseService<SysUserEntity> {
 	 */
 	void updatePassword(Long id, String newPassword);
 
+
+	void updatePasswordByEmail(String email,String newPassowrd);
+
 	/**
 	 * 根据部门ID，查询用户数
 	 */

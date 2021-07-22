@@ -173,8 +173,8 @@
              });.attr('src',"user.jpg");
           }}); */
 
-		//$("#outputImg").attr("src","http://192.168.233.143ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
-		//$("#imgDownload").attr("href","http://192.168.233.143ven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
+		//$("#outputImg").attr("src","http://algaemedical.comven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
+		//$("#imgDownload").attr("href","http://algaemedical.comven_549b2701-e636-4908-91d6-2dcf92f45c2b.png");
 		//alert($("#outputImg").attr("src"));
 	});
 
@@ -236,10 +236,10 @@
 					var imageName=imgPath.substring(sindex+1);
 
 					//$("#outputImg").src=imgPath;
-					$("#outputImg").attr("src","http://192.168.233.143"+imgPath);
-					// $("#imgDownload").attr("href","http://192.168.233.143"+imgPath);
+					$("#outputImg").attr("src","http://algaemedical.com"+imgPath);
+					// $("#imgDownload").attr("href","http://algaemedical.com"+imgPath);
 					// $("#imgDownload").attr("download",imgPath);
-					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.143"+imgPath+"', '"+imageName+"')");
+					$("#imgDownload").attr("onclick","openDownloadDialog('http://algaemedical.com"+imgPath+"', '"+imageName+"')");
 					$("#outputImgDiv").show();
 				}else{
 					alert("出现异常：" + data.message);
@@ -280,9 +280,9 @@
 					//$("#outputImg").src=imgPath;
 					var sindex =imgPath.lastIndexOf("/");
 					var imageName=imgPath.substring(sindex+1);
-					$("#outputImg").attr("src","http://192.168.233.143"+imgPath);
-					// $("#imgDownload").attr("href","http://192.168.233.143"+imgPath);
-					$("#imgDownload").attr("onclick","openDownloadDialog('http://192.168.233.143"+imgPath+"', '"+imageName+"')");
+					$("#outputImg").attr("src","http://algaemedical.com"+imgPath);
+					// $("#imgDownload").attr("href","http://algaemedical.com"+imgPath);
+					$("#imgDownload").attr("onclick","openDownloadDialog('http://algaemedical.com"+imgPath+"', '"+imageName+"')");
 					// $("#imgDownload").attr("download",imgPath);
 					$("#outputImgDiv").show();
 				}else{
@@ -320,7 +320,7 @@
 			var xhr = new XMLHttpRequest();
 			xhr.open(
 					"get",
-					"http://192.168.233.143:8888/dataAnalysis/downloadimg/download?fileName=" + fileName,
+					"http://algaemedical.com:8888/dataAnalysis/downloadimg/download?fileName=" + fileName,
 					true);
 			xhr.responseType = "blob";
 			xhr.onload = function () {
@@ -358,7 +358,7 @@
 		$.ajax({
 			type : 'post',
 			async : false,
-			url : "http://192.168.233.143:8888/dataAnalysis/stat",  //url,
+			url : "http://algaemedical.com:8888/dataAnalysis/stat",  //url,
 			data : params,
 			dataType : 'json',
 			// headers:headers,
@@ -384,13 +384,13 @@
 					if(sessionstatus=="timeout"){
 						//如果超时就处理 ，指定要跳转的页面
 						console.log("如果超时就处理 ，指定要跳转的页面")
-						window.location.href="http://192.168.233.143:8888/dataAnalysis/login.html" //basePath+"/" ;     //
+						window.location.href="http://algaemedical.com:8888/dataAnalysis/login.html" //basePath+"/" ;     //
 					}
 
 					if(sessionstatus==null){
 						//如果超时就处理 ，指定要跳转的页面
 						console.log("如果超时就处理 ，指定要跳转的页面")
-						window.location.href="http://192.168.233.143:8888/dataAnalysis/login.html" //basePath+"/" ;     //
+						window.location.href="http://algaemedical.com:8888/dataAnalysis/login.html" //basePath+"/" ;     //
 					}
 				}
 			}

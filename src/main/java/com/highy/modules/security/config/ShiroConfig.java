@@ -101,10 +101,13 @@ public class ShiroConfig {
         filterMap.put("/bmlogin", "anon");
         filterMap.put("/favicon.ico", "anon");
         filterMap.put("/captcha", "anon");
+        
+        filterMap.put("/checkVerfyCode","anon");
 
         filterMap.put("/forget/**","anon");
 
         filterMap.put("/**", "authc");
+
         shiroFilter.setFilterChainDefinitionMap(filterMap);
 
         return shiroFilter;

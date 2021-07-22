@@ -8,12 +8,16 @@
 
 package com.highy.modules.security.controller;
 
+import com.highy.common.constant.Constant;
+import com.highy.modules.security.dto.ForgetDTO;
+import com.highy.modules.security.dto.UpdatePwdDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Date;
+import java.util.Map;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
@@ -32,12 +36,7 @@ import org.apache.shiro.web.util.SavedRequest;
 import org.apache.shiro.web.util.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.google.code.kaptcha.Constants;
 import com.google.code.kaptcha.Producer;
@@ -70,6 +69,7 @@ public class LoginController {
 	@Autowired
 	private Producer producer;
 
+	//页面验证码
 	@GetMapping("captcha")
 	@ApiOperation(value = "验证码", produces="application/octet-stream")
 	public void captcha(HttpServletRequest request, HttpServletResponse response)throws IOException {
@@ -153,7 +153,15 @@ public class LoginController {
 
 		return result;
 	}
+
+
+
+
 	
+
+
+	
+	//包含邮箱校验验证码是否正确
 	@PostMapping("register")
 	@ApiOperation(value = "注册")
 	public Result register(HttpServletRequest request, @RequestBody LoginDTO dto) {
@@ -198,15 +206,18 @@ public class LoginController {
 
 		return new Result();
 	}
-	
+
+
+	// 这个应该是发送 邮箱 验证码
 	@PutMapping("sendCaptcha")
 	@ApiOperation(value = "发送验证码")
-	public Result sendCaptcha(@RequestParam String email) {
+	public Result sendCaptcha(@RequestParam String email,HttpServletRequest request) {
 		if(StringUtils.isNotBlank(email)){
 			//生成文字验证码
 			try {
 				String captcha = producer.createText();
 				this.sysUserService.sendCaptcha(email, captcha);
+				request.getSession().setAttribute(Constant.MAIL_CAPTCHA_SESSION_KEY,captcha);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -220,6 +231,7 @@ public class LoginController {
 
 
 	@PostMapping("stat")
+	@ApiOperation(value = "是否在线")
 	public Result status() {
 		UserDetail user = SecurityUser.getUser();
 
@@ -237,6 +249,82 @@ public class LoginController {
 
 		return new Result();
 	}
+
+
+	//
+	@PostMapping("forget/checkEmailKaptcha")
+	@ApiOperation("forget pwd checkEmailKaptcha")
+	public Result checkEmailVerifyCode(HttpServletRequest request,@RequestBody ForgetDTO forgetDTO){
+
+		System.out.println("exec controller forget/checkEmailKaptcha");
+
+		ValidatorUtils.validateEntity(forgetDTO);
+
+		String kaptcha = (String)request.getSession().getAttribute(Constant.MAIL_CAPTCHA_SESSION_KEY);
+		if(!forgetDTO.getCaptcha().equalsIgnoreCase(kaptcha)){
+//			request.getSession().removeAttribute(Constant.MAIL_CAPTCHA_SESSION_KEY);
+			return new Result().error(ErrorCode.CAPTCHA_ERROR);
+		}
+
+
+		//用户信息
+		SysUserDTO user = sysUserService.getByUsername(forgetDTO.getUsername());
+		if(user == null){
+			return new Result().error(ErrorCode.ACCOUNT_PASSWORD_ERROR);
+		}
+
+		SysUserDTO userVO = new SysUserDTO();
+		userVO.setEmail(user.getEmail());
+
+		request.getSession().setAttribute("user",userVO);
+
+		return new Result();
+	}
+
+
+	//从 session 拿回页面验证码 ,校验是否正确
+	@RequestMapping("forget/checkVerfyCode")
+	@ApiOperation(value = " 拿回页面验证码 ,校验是否正确")
+	public Result checkVerfyCode(HttpServletRequest request,
+								 String email,
+								 String captcha_1
+	                                 ){
+
+		System.out.println("exec controller forget/checkEmailVerifyCode");
+		//取出验证码
+		String savedCaptcha = (String) request.getSession().getAttribute(Constants.KAPTCHA_SESSION_KEY);
+
+
+
+		if(!savedCaptcha.equals(captcha_1)){
+           return new Result().error("验证码有误");
+		}
+
+		request.getSession().setAttribute("email",email);
+
+
+		return new Result();
+	}
+	
+
+
+
+	@PostMapping("forget/updatePassword")
+	@ApiOperation(value = "update passowrd")
+	public Result forgeupdatePwd(HttpServletRequest request,@RequestBody UpdatePwdDTO data){
+
+		System.out.println("exec controller forget/forgeupdatePwd");
+		try {
+			sysUserService.updatePasswordByEmail(data.getUsername(),data.getCaptcha());
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new Result().error(e.getMessage());
+		}
+		return new Result();
+	}
+
+
+	
 
 	
 }

@@ -5,29 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ff8e4b-09c3-48ca-8552-011440b4aad0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/statics/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/statics/js/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/getbackpwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/common/config/SecurityConfigCSRF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/dto/ForgetDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/statics/css/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/forget/new_pwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/forget/verify_code_confirme.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/plot/controller/DownloadImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/common/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/common/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/common/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/common/constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/FilterConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/filter/A1axCheckTimeOutFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/filter/A1axCheckTimeOutFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/dao/SysUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/dao/SysUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/sys/SysUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/sys/SysUserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/getbackpwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/forget/getbackpwd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$AttachmentType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$AttachmentType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$CloudService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$CloudService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$EmailFlagType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$EmailFlagType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ManuscriptStatusType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ManuscriptStatusType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ReplyFlagType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ReplyFlagType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ScheduleStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ScheduleStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$SequenceCodeType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$SequenceCodeType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$SmsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$SmsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$StatusFlag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$StatusFlag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$YesOrNo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$YesOrNo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/FilterConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/FilterConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/PageMappingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/PageMappingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/dao/SysUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/dao/SysUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/service/SysUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/service/SysUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/service/impl/SysUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/service/impl/SysUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/sys/SysUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/sys/SysUserDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ven_0686ae84-78e7-4f6e-859b-195f289f27e4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ven_23ba6ce8-e10a-40a8-9e14-80874c5efcbb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ven_6f9531f7-092e-4eff-8d90-2827268a5395.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ven_738d92a8-301b-4500-8ab5-46eed31d1f0f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ven_7418c258-35b9-4bfa-8fba-90db841fa008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ven_8dccd52e-5e5a-4b89-b0fb-5592e8b53691.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ven_d0368723-31f2-4a27-9efd-faec42331821.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ven_d7f15de3-3596-438e-8719-8d403f4b643c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ven_eb0be328-8f6f-40e4-b0c0-d1b97a69db3c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ven_f63de19d-abc7-4a27-a7b7-b0524cb60a20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venn2021-07-17-07-19-0383870.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venn2021-07-17-07-19-1774181.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +62,8 @@
       <list>
         <option value="JUnit3 Test Class" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -94,7 +114,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/statics/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/statics/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -104,23 +124,24 @@
     <property name="project.structure.proportion" value="0.20405577" />
     <property name="project.structure.side.proportion" value="0.36211032" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/statics/css" />
       <recent name="$PROJECT_DIR$/src/main/resources/statics/js" />
       <recent name="$PROJECT_DIR$/src/main/resources/statics/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\project\data-collection\src\main\resources\libs" />
-      <recent name="C:\project\data-collection\src\main\webApp\WEB-INF\lib" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/forget" />
       <recent name="C:\project\data-collection\src\main\webApp" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -155,15 +176,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -261,6 +280,10 @@
       <workItem from="1626224685549" duration="38219000" />
       <workItem from="1626405180265" duration="18870000" />
       <workItem from="1626442892184" duration="28760000" />
+      <workItem from="1626766498883" duration="29936000" />
+      <workItem from="1626850015029" duration="9177000" />
+      <workItem from="1626859525412" duration="4114000" />
+      <workItem from="1626864408207" duration="35855000" />
     </task>
     <servers />
   </component>
@@ -294,13 +317,8 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java</url>
-          <line>24</line>
+          <line>26</line>
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java</url>
@@ -316,6 +334,46 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/plot/service/impl/VennRenderService.java</url>
           <line>263</line>
           <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/filter/A1axCheckTimeOutFilter.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/common/config/CorsConfig.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/common/xss/XssFilter.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java</url>
+          <line>290</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java</url>
+          <line>217</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java</url>
+          <line>315</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/templates/plot_basic.html</url>
+          <line>323</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

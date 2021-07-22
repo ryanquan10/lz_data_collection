@@ -114,6 +114,15 @@ public interface Constant {
      * 邮件配置KEY
      */
     String MAIL_CONFIG_KEY = "MAIL_CONFIG_KEY";
+    /**
+     * 邮件验证码保存在 session 中的 key
+     */
+    String MAIL_CAPTCHA_SESSION_KEY = "MAIL_CAPTCHA_SESSION_KEY";
+    /**
+     * 用户未登录时的TOKEN,例如密码重置
+     */
+    String CSRFMIDDLEWARETOKEN_KEY="csrfmiddlewaretoken";
+
 
     /**
      * 定时任务状态
