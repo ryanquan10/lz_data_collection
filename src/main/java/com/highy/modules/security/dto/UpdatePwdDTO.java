@@ -27,7 +27,7 @@ public class UpdatePwdDTO implements Serializable {
     @JsonProperty("password")
     @ApiModelProperty(value = "pwd")
     @NotBlank(message = "{sysuser.password.require}")
-    private String captcha;
+    private String passowrd;
 }
 
 

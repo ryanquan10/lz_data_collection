@@ -93,6 +93,8 @@
             });
         }
 
+        // $("#email").prop('checked', true);
+
         //
         // function verifyCodeSubmit(){
         //
@@ -156,11 +158,11 @@
 
         验证方式
         <form name="verifyForm" id="verifyForm" method="post" autocomplete="off">
-            <input name="csrfmiddlewaretoken" type="hidden" value="7DQ7mp6EF21XekDuSgqscUaDp4MBl4IApc1GjAwaQ0bVVMo3rqF3xnkbHQq4NqsD">
+            <input name="csrfmiddlewaretoken" type="hidden" value='${Session["csrfmiddlewaretoken"]?default(" ")}'>
 
             <div class="login form">
                 <div class="group-ipt email">
-                    <input name="email" class="ipt" id="email" required="true" type="radio" placeholder="邮箱地址" value='${Session["email"]?default("a@qq.com")}'>邮箱地址: <span> ${Session["email"]?default("a@qq.com")} </span>  </input>
+                    <input name="email" class="ipt" id="email" required="true" type="radio" placeholder="邮箱地址" checked="checked" value='${Session["email"]?default(" ")}'>邮箱地址: <span> ${Session["email"]?default("a@qq.com")} </span>  </input>
                 </div>
                 <div class="group">
 

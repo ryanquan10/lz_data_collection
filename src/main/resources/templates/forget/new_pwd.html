@@ -86,8 +86,7 @@
 
 
         <form name="loginForm" id="loginForm" method="post" autocomplete="off">
-            <input id="csrfmiddlewaretoken" name="csrfmiddlewaretoken" type="hidden" value="7DQ7mp6EF21XekDuSgqscUaDp4MBl4IApc1GjAwaQ0bVVMo3rqF3xnkbHQq4NqsD">
-
+            <input id="csrfmiddlewaretoken" name="csrfmiddlewaretoken" type="hidden" value='${Session["csrfmiddlewaretoken"]?default(" ")}'>
             <div class="login form">
                 <div class="group">
                     <div style="display:none">

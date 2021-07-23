@@ -18,6 +18,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Map;
+import java.util.UUID;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
@@ -125,9 +126,7 @@ public class LoginController {
 			log.setStatus(LoginStatusEnum.SUCCESS.value());
 			log.setCreator(user.getId());
 			log.setCreatorName(user.getUsername());
-
 			// by qy
-
 //			SavedRequest savedRequest = WebUtils.getSavedRequest(request);
 //			String url = savedRequest.getRequestUrl();
 //
@@ -231,96 +230,130 @@ public class LoginController {
 
 
 	@PostMapping("stat")
-	@ApiOperation(value = "是否在线")
+	@ApiOperation(value = "用户是否在线")
 	public Result status() {
 		UserDetail user = SecurityUser.getUser();
 
 		try {
-
 			if(user==null){
-				return new Result().error("get stat 失败：please login");
+				return new Result().error("请你先登录");
 			}
-
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-				return new Result().error("get stat 失败：" + e.getMessage());
+				return new Result().error("获取状态失败：" + e.getMessage());
 			}
 
 		return new Result();
 	}
 
 
-	//
-	@PostMapping("forget/checkEmailKaptcha")
-	@ApiOperation("forget pwd checkEmailKaptcha")
-	public Result checkEmailVerifyCode(HttpServletRequest request,@RequestBody ForgetDTO forgetDTO){
-
-		System.out.println("exec controller forget/checkEmailKaptcha");
-
-		ValidatorUtils.validateEntity(forgetDTO);
-
-		String kaptcha = (String)request.getSession().getAttribute(Constant.MAIL_CAPTCHA_SESSION_KEY);
-		if(!forgetDTO.getCaptcha().equalsIgnoreCase(kaptcha)){
-//			request.getSession().removeAttribute(Constant.MAIL_CAPTCHA_SESSION_KEY);
-			return new Result().error(ErrorCode.CAPTCHA_ERROR);
-		}
 
 
-		//用户信息
-		SysUserDTO user = sysUserService.getByUsername(forgetDTO.getUsername());
-		if(user == null){
-			return new Result().error(ErrorCode.ACCOUNT_PASSWORD_ERROR);
-		}
-
-		SysUserDTO userVO = new SysUserDTO();
-		userVO.setEmail(user.getEmail());
-
-		request.getSession().setAttribute("user",userVO);
-
-		return new Result();
-	}
-
-
-	//从 session 拿回页面验证码 ,校验是否正确
+	//从 session 拿回页面验证码 ,校验是否正确 ,建造一个暂时的token
 	@RequestMapping("forget/checkVerfyCode")
-	@ApiOperation(value = " 拿回页面验证码 ,校验是否正确")
+	@ApiOperation(value = "忘记密码 拿回页面验证码,校验是否正确")
 	public Result checkVerfyCode(HttpServletRequest request,
 								 String email,
 								 String captcha_1
 	                                 ){
-
-		System.out.println("exec controller forget/checkEmailVerifyCode");
 		//取出验证码
 		String savedCaptcha = (String) request.getSession().getAttribute(Constants.KAPTCHA_SESSION_KEY);
 
-
+		System.out.println("exec controller forget/checkEmailKaptcha");
 
 		if(!savedCaptcha.equals(captcha_1)){
            return new Result().error("验证码有误");
 		}
 
 		request.getSession().setAttribute("email",email);
+		request.getSession().setAttribute(Constant.CSRF_MIDDLEWARE_TOKEN_KEY,UUID.randomUUID().toString());
 
 
 		return new Result();
 	}
-	
 
+
+	@PostMapping("forget/checkEmailKaptcha")
+	@ApiOperation("忘记密码 判断用户输入的邮箱验证码是否正确 ")
+	public Result checkEmailVerifyCode(HttpServletRequest request,@RequestBody ForgetDTO forgetDTO){
+
+
+		if (request.getSession().getAttribute(Constant.CSRF_MIDDLEWARE_TOKEN_KEY).equals(forgetDTO.getToken())) {
+			ValidatorUtils.validateEntity(forgetDTO);
+
+			String kaptcha = (String)request.getSession().getAttribute(Constant.MAIL_CAPTCHA_SESSION_KEY);
+			if(!forgetDTO.getCaptcha().equalsIgnoreCase(kaptcha)){
+				return new Result().error(ErrorCode.CAPTCHA_ERROR);
+			}
+
+			//用户信息
+			SysUserDTO user = sysUserService.getByUsername(forgetDTO.getUsername());
+			if(user == null){
+				return new Result().error(ErrorCode.ACCOUNT_PASSWORD_ERROR);
+			}
+
+			SysUserDTO userVO = new SysUserDTO();
+			userVO.setEmail(user.getEmail());
+
+			request.getSession().setAttribute("user",userVO);
+
+			return new Result();
+		}
+		return new Result().error(ErrorCode.TOKEN_NOT_EMPTY,"缺少token");
+	}
 
 
 	@PostMapping("forget/updatePassword")
-	@ApiOperation(value = "update passowrd")
+	@ApiOperation(value = "忘记密码 更新密码 ")
 	public Result forgeupdatePwd(HttpServletRequest request,@RequestBody UpdatePwdDTO data){
 
 		System.out.println("exec controller forget/forgeupdatePwd");
-		try {
-			sysUserService.updatePasswordByEmail(data.getUsername(),data.getCaptcha());
-		} catch (Exception e) {
-			e.printStackTrace();
-			return new Result().error(e.getMessage());
+		if (request.getSession().getAttribute(Constant.CSRF_MIDDLEWARE_TOKEN_KEY).equals(data.getToken())) {
+			try {
+				sysUserService.updatePasswordByEmail(data.getUsername(),data.getPassowrd());
+			} catch (Exception e) {
+				e.printStackTrace();
+				return new Result().error(e.getMessage());
+			}
+			request.getSession().removeAttribute(Constant.CSRF_MIDDLEWARE_TOKEN_KEY);
+
+			Subject subject = SecurityUtils.getSubject();
+			UsernamePasswordToken token = new UsernamePasswordToken(data.getUsername(), data.getPassowrd());
+			subject.login(token);
+
+			UserDetail user = SecurityUser.getUser();
+
+			SysLogLoginEntity log = new SysLogLoginEntity();
+			log.setOperation(LoginOperationEnum.MODIFY.value());
+			log.setIp(IpUtils.getIpAddr(request));
+			log.setUserAgent(request.getHeader(HttpHeaders.USER_AGENT));
+			log.setIp(IpUtils.getIpAddr(request));
+			log.setStatus(LoginStatusEnum.SUCCESS.value());
+			log.setCreator(user.getId());
+			log.setCreatorName(user.getUsername());
+			log.setCreateDate(new Date());
+			sysLogLoginService.save(log);
+
+
+			log.setOperation(LoginOperationEnum.LOGIN.value());
+			log.setIp(IpUtils.getIpAddr(request));
+			log.setUserAgent(request.getHeader(HttpHeaders.USER_AGENT));
+			log.setIp(IpUtils.getIpAddr(request));
+			log.setStatus(LoginStatusEnum.SUCCESS.value());
+			log.setCreator(user.getId());
+			log.setCreatorName(user.getUsername());
+			log.setCreateDate(new Date());
+			sysLogLoginService.save(log);
+
+
+			return new Result();
 		}
-		return new Result();
+
+
+
+
+		return new Result().error(ErrorCode.TOKEN_NOT_EMPTY,"缺少token");
 	}
 
 

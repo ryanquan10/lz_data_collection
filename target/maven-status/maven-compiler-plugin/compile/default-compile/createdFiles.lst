@@ -20,7 +20,6 @@ com/highy/modules/message/email/EmailConfig.class
 com/highy/modules/message/service/impl/SysMailTemplateServiceImpl.class
 com/highy/modules/security/password/PasswordEncoder.class
 com/highy/modules/security/user/SecurityUser.class
-com/highy/common/config/CorsConfig.class
 com/highy/modules/sys/dao/SysUserDao.class
 com/highy/modules/sys/dto/CaptchaRecordDTO.class
 com/highy/modules/sys/dao/CaptchaRecordDao.class
@@ -50,6 +49,7 @@ com/highy/modules/message/service/SysSmsService.class
 com/highy/modules/sys/enums/UserStatusEnum.class
 com/highy/modules/security/service/impl/ShiroServiceImpl.class
 com/highy/modules/message/controller/SmsController.class
+com/highy/modules/security/dto/ForgetDTO.class
 com/highy/modules/log/enums/OperationStatusEnum.class
 com/highy/modules/sys/dto/SysParamsDTO.class
 com/highy/modules/log/controller/SysLogErrorController.class
@@ -143,6 +143,7 @@ com/highy/modules/security/service/ShiroService.class
 com/highy/modules/oss/controller/SysOssController.class
 com/highy/modules/sys/service/impl/SysParamsServiceImpl.class
 com/highy/common/constant/Constant$SequenceCodeType.class
+com/highy/modules/security/dto/UpdatePwdDTO.class
 com/highy/modules/message/sms/AbstractSmsService.class
 com/highy/modules/sys/service/impl/SysUserServiceImpl.class
 com/highy/modules/oss/cloud/AbstractCloudStorageService.class
@@ -180,7 +181,6 @@ com/highy/common/redis/serializer/JsonRedisSerializer.class
 com/highy/common/dao/BaseDao.class
 com/highy/modules/plot/controller/model/RestResponse.class
 com/highy/modules/plot/controller/Test2.class
-com/highy/modules/security/filter/A1axCheckTimeOutFilter.class
 com/highy/common/validator/group/FastDFSGroup.class
 com/highy/modules/security/config/WebMvcConfig.class
 com/highy/common/validator/group/LocalGroup.class

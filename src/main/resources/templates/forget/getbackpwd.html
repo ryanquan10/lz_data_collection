@@ -26,12 +26,9 @@
         $(function(){
             $('#id_captcha_1').attr('placeholder', '请输入验证码');
 
-
             $("#id_captcha_1").on('input',function () {
 
-
                 var t=setTimeout("checkCaptcha()",3000)
-
 
             });
 
@@ -67,17 +64,7 @@
             }
 
 
-            console.log($("#verifyCodeForm").serializeObject());
-            console.log(typeof JSON.stringify($("#verifyCodeForm").serializeObject()));
-            console.log(JSON.stringify($("#verifyCodeForm").serializeObject()));
-            console.log("${request.contextPath}/forget/checkVerfyCode");
 
-
-
-            //var formData = $("#loginForm").serialize();
-            //alert(JSON.stringify($("#loginForm").serializeObject()));
-
-            //JSON.stringify(getFormData($("#dataForm"))),//formData,
             $.ajax({
                 type: 'get',
                 dataType: 'json',
@@ -131,8 +118,8 @@
 
               method="post"
               autocomplete="off">
-            <input type="hidden" name="csrfmiddlewaretoken" value="3c75ab66-fee0-4900-8237-8458ea7225e3">
-
+            请输入您验证码
+            <input name="csrfmiddlewaretoken" type="hidden" value='${Session["csrfmiddlewaretoken"]?default(" ")}'>
             <div class="login form">
                 <div class="group">
                     <div class="group-ipt email">
@@ -141,7 +128,7 @@
                     <div class="group-ipt verify">
 
 <!--                        autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"-->
-                        <input  id="id_captcha_1" name="captcha_1" type="text" placeholder="请输入验证码">
+                        <input  id="id_captcha_1" name="captcha_1" type="text" placeholder="请输入邮箱验证码">
 
                         <!--                        <img src="${request.contextPath}/forget//forget/statics/js/saved_resource" alt="captcha" class="captcha"> <input id="id_captcha_0" name="captcha_0" type="hidden" value="824c9b207aae1c027150236ab17558388e031f23">-->
                         <img id="captchaImg" class="captcha" onclick="getVerifiCode();" alt="captcha" src="">

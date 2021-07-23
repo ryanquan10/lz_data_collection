@@ -121,7 +121,7 @@ public interface Constant {
     /**
      * 用户未登录时的TOKEN,例如密码重置
      */
-    String CSRFMIDDLEWARETOKEN_KEY="csrfmiddlewaretoken";
+    String CSRF_MIDDLEWARE_TOKEN_KEY="csrfmiddlewaretoken";
 
 
     /**

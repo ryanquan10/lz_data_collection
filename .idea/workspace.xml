@@ -5,49 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ff8e4b-09c3-48ca-8552-011440b4aad0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/common/config/SecurityConfigCSRF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/dto/ForgetDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/statics/css/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/forget/new_pwd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/forget/verify_code_confirme.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/common/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/common/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/common/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/common/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/FilterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/log/enums/LoginOperationEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/log/enums/LoginOperationEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/PageMappingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/filter/A1axCheckTimeOutFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/filter/A1axCheckTimeOutFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/dao/SysUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/dao/SysUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/service/SysUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/sys/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/sys/SysUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/sys/SysUserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/getbackpwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/forget/getbackpwd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/plot_basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$AttachmentType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$AttachmentType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$CloudService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$CloudService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$EmailFlagType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$EmailFlagType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ManuscriptStatusType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ManuscriptStatusType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ReplyFlagType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ReplyFlagType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ScheduleStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$ScheduleStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$SequenceCodeType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$SequenceCodeType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$SmsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$SmsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$StatusFlag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$StatusFlag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$YesOrNo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant$YesOrNo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/common/constant/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/FilterConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/FilterConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/config/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/dto/UpdatePwdDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/highy/modules/security/dto/UpdatePwdDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/forget/getbackpwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/forget/getbackpwd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/forget/new_pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/forget/new_pwd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/forget/verify_code_confirme.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/forget/verify_code_confirme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OtherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OtherTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/PageMappingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/security/controller/PageMappingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/dao/SysUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/dao/SysUserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/service/SysUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/service/SysUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/service/impl/SysUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/highy/modules/sys/service/impl/SysUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/sys/SysUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/sys/SysUserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/plot_basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/data-collection-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +147,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,8 +216,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.DataCollectionApplication" />
-        <item itemvalue="Application.XssUtils" />
         <item itemvalue="Application.OtherTest" />
+        <item itemvalue="Application.XssUtils" />
         <item itemvalue="Gradle./home/qy/code/data-collection" />
         <item itemvalue="Application.Jri" />
       </list>
@@ -283,7 +256,8 @@
       <workItem from="1626766498883" duration="29936000" />
       <workItem from="1626850015029" duration="9177000" />
       <workItem from="1626859525412" duration="4114000" />
-      <workItem from="1626864408207" duration="35855000" />
+      <workItem from="1626864408207" duration="48580000" />
+      <workItem from="1627012337064" duration="4051000" />
     </task>
     <servers />
   </component>
@@ -357,18 +331,8 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java</url>
-          <line>290</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java</url>
-          <line>217</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/highy/modules/security/controller/LoginController.java</url>
-          <line>315</line>
-          <option name="timeStamp" value="79" />
+          <line>281</line>
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/src/main/resources/templates/plot_basic.html</url>

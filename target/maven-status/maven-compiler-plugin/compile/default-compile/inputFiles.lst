@@ -53,6 +53,7 @@
 /home/qy/code/data-collection/src/main/java/com/highy/modules/message/service/impl/SysSmsServiceImpl.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/security/password/BCrypt.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/entity/SysUserEntity.java
+/home/qy/code/data-collection/src/main/java/com/highy/common/config/SecurityConfigCSRF.java
 /home/qy/code/data-collection/src/main/java/com/highy/common/redis/RedisUtils.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/entity/SysDeptEntity.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/service/impl/SysRoleServiceImpl.java
@@ -87,6 +88,7 @@
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/service/impl/SysRoleDataScopeServiceImpl.java
 /home/qy/code/data-collection/src/main/java/com/highy/common/xss/XssHttpServletRequestWrapper.java
 /home/qy/code/data-collection/src/main/java/com/highy/common/utils/TreeUtils.java
+/home/qy/code/data-collection/src/main/java/com/highy/modules/security/dto/ForgetDTO.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/dto/CaptchaRecordDTO.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/service/impl/SysRoleMenuServiceImpl.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/utils/SingleRengineBuilder.java
@@ -153,6 +155,7 @@
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/dao/SysMenuDao.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/oss/cloud/LocalCloudStorageService.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/entity/SysDictEntity.java
+/home/qy/code/data-collection/src/main/java/com/highy/modules/security/dto/UpdatePwdDTO.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/log/enums/LoginStatusEnum.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/sys/service/impl/SysUserServiceImpl.java
 /home/qy/code/data-collection/src/main/java/com/highy/modules/message/email/EmailUtils.java

@@ -22,7 +22,11 @@ public enum LoginOperationEnum {
     /**
      * 用户退出
      */
-    LOGOUT(1);
+    LOGOUT(1),
+    /**
+     * 账户变更
+     */
+    MODIFY(2);
 
     private int value;
 
