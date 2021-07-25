@@ -14,7 +14,7 @@ public class ForgetDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @JsonProperty("email")
-    @ApiModelProperty(value = "用户名", required = true)
+    @ApiModelProperty(value = "用户名", required = false)
     @NotBlank(message="{sysuser.username.require}")
     private String username;
 

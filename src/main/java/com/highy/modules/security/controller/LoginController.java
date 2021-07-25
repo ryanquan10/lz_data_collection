@@ -288,7 +288,7 @@ public class LoginController {
 			}
 
 			//用户信息
-			SysUserDTO user = sysUserService.getByUsername(forgetDTO.getUsername());
+			SysUserDTO user = sysUserService.getByUsername((String) request.getSession().getAttribute("email"));
 			if(user == null){
 				return new Result().error(ErrorCode.ACCOUNT_PASSWORD_ERROR);
 			}
@@ -311,12 +311,13 @@ public class LoginController {
 		System.out.println("exec controller forget/forgeupdatePwd");
 		if (request.getSession().getAttribute(Constant.CSRF_MIDDLEWARE_TOKEN_KEY).equals(data.getToken())) {
 			try {
-				sysUserService.updatePasswordByEmail(data.getUsername(),data.getPassowrd());
+				sysUserService.updatePasswordByEmail((String) request.getSession().getAttribute("email"),data.getPassowrd());
 			} catch (Exception e) {
 				e.printStackTrace();
 				return new Result().error(e.getMessage());
 			}
 			request.getSession().removeAttribute(Constant.CSRF_MIDDLEWARE_TOKEN_KEY);
+			request.getSession().removeAttribute("email");
 
 			Subject subject = SecurityUtils.getSubject();
 			UsernamePasswordToken token = new UsernamePasswordToken(data.getUsername(), data.getPassowrd());
@@ -337,12 +338,6 @@ public class LoginController {
 
 
 			log.setOperation(LoginOperationEnum.LOGIN.value());
-			log.setIp(IpUtils.getIpAddr(request));
-			log.setUserAgent(request.getHeader(HttpHeaders.USER_AGENT));
-			log.setIp(IpUtils.getIpAddr(request));
-			log.setStatus(LoginStatusEnum.SUCCESS.value());
-			log.setCreator(user.getId());
-			log.setCreatorName(user.getUsername());
 			log.setCreateDate(new Date());
 			sysLogLoginService.save(log);
 
